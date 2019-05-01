@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-## Este es el repo global donde subiran el contenido que vayan haciendo
+﻿Este es el repo global donde subiran el contenido que vayan haciendo
 
 # El flujo de trabajo es el siguiente:
 * Deberán hacer un fork de este repositorio (lo que vinculará este repositorio al de cada uno).
@@ -26,4 +25,3 @@
 * Trabajan en sus locales creando una branch para el ticket o tarea que estén realizando. 
 * Subirán a su origin los cambios que hayan realizados y desde github (Desde la pagina) harán Pull Request a este repositorio para que los cambios se suban.
 * El dueño del repo u otro deberá aprobar los cambios para que puedan ser mergeados a global.
->>>>>>> 242ecf1259e19f82d7214e910d967fc7a4a3e1e9
