@@ -1,15 +1,22 @@
 .logo {
   text-align: center;
-
 }
+/*Se centra la imagen del logo*/
 .logo img{
   height: 83px;
   width: 40%;
 }
-
+/*Se ajusta el tamaño de la imagen*/
  .barra a:hover{
 background-color: blue;
  }
+
  .mapaBoton {
    background-color: blue;
  }
+.mapa{
+  text-align: center;
+}
+.logonav img{
+  height: 35px;
+}
