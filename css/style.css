@@ -1,0 +1,15 @@
+.logo {
+  text-align: center;
+
+}
+.logo img{
+  height: 83px;
+  width: 40%;
+}
+
+ .barra a:hover{
+background-color: blue;
+ }
+ .mapaBoton {
+   background-color: blue;
+ }
