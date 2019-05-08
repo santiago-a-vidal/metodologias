@@ -1,0 +1,63 @@
+<html>
+  <head>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+  type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+  type="text/javascript" charset="utf-8"></script>
+<script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+   type="text/javascript" charset="utf-8"></script>
+<script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+   type="text/javascript" charset="utf-8"></script>
+<script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js"
+   type="text/javascript" charset="utf-8"></script>
+
+
+   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-m/IsCzcjugdWmU+o7MIi2baMzxranuwj9uJY88W40OvD9aVf3wfl/QnLhdS0Z+VQUheZkM6weHxjEANi8Of5+w=="
+  crossorigin=""></script>
+  </head>
+  <body>
+  <div style="width: 1000px; height: 700px" id="mapContainer"></div>
+  <script>
+    // Initialize the platform object:
+    var platform = new H.service.Platform({
+    'app_id': 'EIOeFZ8P1949HR10PlpA',
+    'app_code': 'NyT75IYV5smf3k2xMO-Xeg'
+    });
+
+    // Obtain the default map types from the platform object
+    var maptypes = platform.createDefaultLayers();
+
+    // Instantiate (and display) a map object:
+    var map = new H.Map(
+    document.getElementById('mapContainer'),
+    maptypes.normal.map,
+    {
+      zoom: 13.5,
+      center: { lng: -59.1490874, lat: -37.3196791 }
+    });
+
+    // Enable the event system on the map instance:
+    var mapEvents = new H.mapevents.MapEvents(map);
+
+    // Add event listener:
+    map.addEventListener('tap', function(evt) {
+      // Log 'tap' and 'mouse' events:
+      console.log(evt.type, evt.currentPointer.type);
+    });
+var behavior = new H.mapevents.Behavior(mapEvents);
+
+var ui = H.ui.UI.createDefault(map, maptypes, 'de-DE');
+
+var bubble = new H.ui.InfoBubble({ lng: -59.1490874, lat: -37.3196791 }, {
+        content: '<b>Hello World!</b>'
+       });
+
+ui.addBubble(bubble);
+
+
+
+  </script>
+  </body>
+</html>
