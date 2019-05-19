@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="metodologiaNuevo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="view/web/css/bootstrap.min.css">
     <link rel="stylesheet" href="view/web/css/style.css">
-    <title>Iniciar Sesión | Basura Tandil </title>
+    <title>Inicio | Basura Tandil </title>
   </head>
   <body>
     <header>

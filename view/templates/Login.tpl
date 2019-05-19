@@ -1,5 +1,5 @@
-{include file="header.tpl"}
-{include file="NavBarLogin.tpl"}
+{include file="view/templates/header.tpl"}
+{include file="view/templates/NavBar.tpl"}
     <h3>{$Titulo}</h3>
     <form method="post" action="verificarLogin">
       <div class="modal-body">
@@ -19,4 +19,4 @@
     </form>
 
 
-{include file="footer.tpl"}
+{include file="view/templates/footer.tpl"}

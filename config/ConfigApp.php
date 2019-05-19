@@ -13,10 +13,12 @@ class ConfigApp
     public static $ACTION = 'action';
     public static $PARAMS = 'params';
     public static $ACTIONS = [
+        'home' => 'LoginController#login', // CAMBIAR DESPUÉS
       'jefe'=> 'JefeController#Home',
       'ciudadano'=> 'CiudadanoController#Home',
-      'MostrarFormulario' =>'CiudadanoController#mostrarFormulario'
-      'AgregarDenuncia'=> 'CiudadanoController# insertarDenuncia',
+      'MostrarFormulario' =>'CiudadanoController#mostrarFormulario',
+      'AgregarDenuncia'=> 'CiudadanoController# insertarDenuncia'
+    ];
       
     }
  ?>

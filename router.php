@@ -1,8 +1,9 @@
 <?php
-  require_once ('controller/BasuraController.php');
+  require_once ('controller/CiudadanoController.php');
   require_once ('controller/JefeController.php');
   require_once ('controller/LoginController.php');
   require_once ('controller/SecuredController.php');
+  require_once ('config/ConfigApp.php');
 
   function parseURL($url)
   {
