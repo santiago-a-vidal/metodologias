@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 19-05-2019 a las 03:02:15
--- Versión del servidor: 10.1.32-MariaDB
--- Versión de PHP: 7.2.5
+-- Host: localhost
+-- Generation Time: May 20, 2019 at 12:06 AM
+-- Server version: 10.1.39-MariaDB
+-- PHP Version: 7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `reportes_tandil`
+-- Database: `reportes_tandil`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `denuncia`
+-- Table structure for table `denuncia`
 --
 
 CREATE TABLE `denuncia` (
@@ -40,7 +40,7 @@ CREATE TABLE `denuncia` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuario`
+-- Table structure for table `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -50,53 +50,56 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Índices para tablas volcadas
+-- Dumping data for table `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `mapa`, `esJefe`) VALUES
+(1, '', 1),
+(2, '', 0),
+(3, '', 1);
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `denuncia`
+-- Indexes for table `denuncia`
 --
 ALTER TABLE `denuncia`
   ADD PRIMARY KEY (`id_denuncia`),
   ADD KEY `id_usuario` (`id_usuario`);
 
 --
--- Indices de la tabla `usuario`
+-- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_usuario`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `denuncia`
+-- AUTO_INCREMENT for table `denuncia`
 --
 ALTER TABLE `denuncia`
   MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `usuario`
+-- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `denuncia`
+-- Constraints for table `denuncia`
 --
 ALTER TABLE `denuncia`
   ADD CONSTRAINT `denuncia_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
-
---
--- Filtros para la tabla `usuario`
---
-ALTER TABLE `usuario`
-  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `denuncia` (`id_usuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
