@@ -1,0 +1,5 @@
+Nuestro criterio de done se basa en los siguientes puntos:
+-Comentar el codigo para que sea mas facil comprender los metodos y funciones
+-Testear manualmente para conocer su funcionamiento
+-Documentar cada ticket del sprint 
+-Cada commit que se realiza debe tener su correspondiente mensaje
