@@ -1,6 +1,7 @@
 <?php
 
 require_once "./model/CiudadanoModel.php";
+require_once "./view/CiudadanoView.php";
 require_once  "SecuredController.php";
 
 class CiudadanoController extends SecuredController
@@ -18,7 +19,7 @@ class CiudadanoController extends SecuredController
     $this->model = new CiudadanoModel();
     $this->modelJefe = new JefeModel();
     $this->Titulo = "Lista de Lugares";
-    $this->view = new BasuraView();
+    $this->view = new CiudadanoView();
   }
  //Todo lo relacionado a Home
   function HomeBase($message = ''){
@@ -48,7 +49,7 @@ class CiudadanoController extends SecuredController
 
   }
 function mostrarFormulario(){ //lleva al usuario al formulario para crear una nueva denuncia
-  
+
 }
 
 
