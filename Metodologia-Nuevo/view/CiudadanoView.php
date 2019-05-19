@@ -1,7 +1,7 @@
 <?php
 require_once('libs/Smarty.class.php');
 
-class BasuraView
+class CiudadanoView
 {
 
     private  $smarty;
@@ -10,7 +10,7 @@ class BasuraView
     {
       $this->smarty = new Smarty();
     }
-    
+
     function PublicView()
     {
     }

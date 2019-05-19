@@ -27,12 +27,13 @@ class CiudadanoController extends SecuredController
       $this->view->ViewBase($message, $this->Titulo, $Mapa);
   }
 
-  function InsertarDenuncia(){
+  function InsertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
   $ubicacin = $_POST["ubicacionForm"];
   $descripcion = $_POST["descripcionForm"];
   $estado = $_POST["estadoForm"];
   $id_usuario = $_POST["id_usuarioForm"];
- //como subir la imagen --->   function postImagen($param){
+ //como subir la imagen --->   func
+ tion postImagen($param){
   //    $id_producto= $_POST['idForm'];
     //  $name= uniqid();
     //  $ruta =$_FILES['imagen']['tmp_name'];
