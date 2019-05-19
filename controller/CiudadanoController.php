@@ -1,7 +1,6 @@
 <?php
 
-require_once "./view/BasuraView.php";
-require_once "./model/BasuraModel.php";
+require_once "./model/CiudadanoModel.php";
 require_once  "SecuredController.php";
 
 class CiudadanoController extends SecuredController
@@ -28,24 +27,24 @@ class CiudadanoController extends SecuredController
   }
 
   function insertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
-  $ubicacin = $_POST["ubicacionForm"];
-  $descripcion = $_POST["descripcionForm"];
-  $estado = $_POST["estadoForm"];
-  $id_usuario = $_POST["id_usuarioForm"];
- //como subir la imagen --->   func
- tion postImagen($param){
-  //    $id_producto= $_POST['idForm'];
-    //  $name= uniqid();
-    //  $ruta =$_FILES['imagen']['tmp_name'];
-      //$type = $_FILES['imagen']['type'];
-      //$arrayType= explode("/",$type);
-    //  $destino ='images/'.$name.".".$arrayType[1];
-
-    //  move_uploaded_file($ruta,$destino);
-    //  $this->model->postImagen($name,$destino,$param[0]);
-
-//*    }
-  $this->model->GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario);
+//  $ubicacion = $_POST["ubicacionForm"];
+//  $descripcion = $_POST["descripcionForm"];
+//  $estado = $_POST["estadoForm"];
+//  $id_usuario = $_POST["id_usuarioForm"];
+// //como subir la imagen --->   func
+// //tion postImagen($param){
+//  //    $id_producto= $_POST['idForm'];
+//    //  $name= uniqid();
+//    //  $ruta =$_FILES['imagen']['tmp_name'];
+//      //$type = $_FILES['imagen']['type'];
+//      //$arrayType= explode("/",$type);
+//    //  $destino ='images/'.$name.".".$arrayType[1];
+//
+//    //  move_uploaded_file($ruta,$destino);
+//    //  $this->model->postImagen($name,$destino,$param[0]);
+//
+////*    }
+//  $this->model->GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario);
 
   }
 function mostrarFormulario(){ //lleva al usuario al formulario para crear una nueva denuncia

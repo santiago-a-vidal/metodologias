@@ -1,5 +1,7 @@
 <?php
 
+require_once ('./libs/Smarty.class.php');
+
 class LoginView
 {
   private $Smarty;
@@ -13,7 +15,7 @@ class LoginView
   {
     $this->Smarty->assign('Titulo',"Inicie sesión");
     $this->Smarty->assign('Message',$message);
-    $this->Smarty->display('templates/Login.tpl');
+    $this->Smarty->display('view/templates/Login.tpl');
   }
 
 }
