@@ -49,7 +49,7 @@ class CiudadanoController extends SecuredController
 
   }
 function mostrarFormulario(){ //lleva al usuario al formulario para crear una nueva denuncia
-
+$this->view->mostrarFormulario($this->Titulo);
 }
 
 

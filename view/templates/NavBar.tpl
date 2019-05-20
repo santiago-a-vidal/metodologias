@@ -37,5 +37,5 @@
           </nav>
   </div>
   <div class="container logo">
-        <img src="img/logotandil.jpg" class="img-fluid" alt="Logo Municipalidad">
+        <img src="./view/web/img/logotandil.jpg" class="img-fluid" alt="Logo Municipalidad">
   </div>

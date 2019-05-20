@@ -1,6 +1,6 @@
 <?php
 
-define('HOME', 'Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
+//define('HOME', 'Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
 //define('HOME', 'Location: http://'.$_SERVER["SERVER_NAME"]. ":". $_SERVER['SERVER_PORT'] . dirname($_SERVER["PHP_SELF"]));
 //dirname($_SERVER["PHP_SELF"]);
 define('ADMIN', 'Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]). '/admin');
@@ -16,9 +16,9 @@ class ConfigApp
         'home' => 'LoginController#login', // CAMBIAR DESPUÉS
       'jefe'=> 'JefeController#Home',
       'ciudadano'=> 'CiudadanoController#Home',
-      'MostrarFormulario' =>'CiudadanoController#mostrarFormulario',
-      'AgregarDenuncia'=> 'CiudadanoController# insertarDenuncia'
+      'verFormulario'=>'CiudadanoController#mostrarFormulario',
+      'AgregarDenuncia'=> 'CiudadanoController#insertarDenuncia'
     ];
-      
+
     }
  ?>
