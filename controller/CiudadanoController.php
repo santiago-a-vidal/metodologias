@@ -33,10 +33,16 @@ class CiudadanoController //extends SecuredController
   }
 
   function insertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
-//  $ubicacion = $_POST["ubicacionForm"];
-//  $descripcion = $_POST["descripcionForm"];
-//  $estado = $_POST["estadoForm"];
-//  $id_usuario = $_POST["id_usuarioForm"];
+ $ubicacion = $_POST["ubicacionForm"];
+ $descripcion = $_POST["descripcionForm"];
+ $estado = 1;
+ $id_usuario = 2;
+$imagen = $_POST["imagenForm"];
+
+$denuncia = $this->model ->GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario);
+
+  header('Location: '.home);
+
 // //como subir la imagen --->   func
 // //tion postImagen($param){
 //  //    $id_producto= $_POST['idForm'];
@@ -54,7 +60,7 @@ class CiudadanoController //extends SecuredController
 
   }
 function mostrarFormulario(){ //lleva al usuario al formulario para crear una nueva denuncia
-$this->view->mostrarFormulario($this->Titulo);
+  $this->view->MostrarHome($this->Titulo);
 }
 
 

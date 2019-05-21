@@ -25,6 +25,7 @@ class CiudadanoModel
   function GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario)  {
     $sentencia = $this->db->prepare("INSERT INTO denuncia(ubicacion,descripcion,estado,imagen,id_usuario) VALUES(?,?,?,?,?)");
   $sentencia->execute(array($ubicacion,$descripcion,$estado,$imagen,$id_usuario));
+
   }
 
 
