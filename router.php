@@ -2,7 +2,7 @@
   require_once ('controller/CiudadanoController.php');
   require_once ('controller/JefeController.php');
   require_once ('controller/LoginController.php');
-  require_once ('controller/SecuredController.php');
+//  require_once ('controller/SecuredController.php');
   require_once ('config/ConfigApp.php');
 
   function parseURL($url)
@@ -25,11 +25,13 @@
               echo $controller->$metodo($params);
           }
           else{
-              echo $controller->$metodo();
+      $controller->$metodo();
           }
       }else{
-        $controller =  new LoginController();
-        echo $controller->login();
+
+        echo "carajo";
+        //$controller =  new LoginController();
+        // echo $controller->login();
       }
   }
  ?>

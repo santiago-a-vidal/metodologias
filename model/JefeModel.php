@@ -10,8 +10,8 @@ class JefeModel
   }
   function Connect(){
     return new PDO('mysql:host=localhost;'
-    .'dbname=repotes_tandil;charset=utf8'
-    , 'root', 'root');
+    .'dbname=reportes_tandil;charset=utf8'
+    , 'root', '');
   }
 
   function GetDenunciasActivas(){

@@ -1,10 +1,11 @@
 <?php
-
-class JefeController extends SecuredController
+//require_once  "SecuredController.php";
+ 
+class JefeController //extends SecuredController
 {
   function __construct()
   {
-    parent::__construct();
+  //  parent::__construct();
   $this->model = new JefeModel();
   $this->view = new JefeView();
 }

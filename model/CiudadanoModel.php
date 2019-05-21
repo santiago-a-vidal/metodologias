@@ -13,7 +13,7 @@ class CiudadanoModel
   {
     return new PDO('mysql:host=localhost;'
     .'dbname=reportes_tandil;charset=utf8'
-    , 'root', 'root');
+    , 'root', '');
   }
 
   function GetDenuncias($id_usuario){

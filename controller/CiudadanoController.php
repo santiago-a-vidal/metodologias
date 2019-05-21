@@ -1,10 +1,11 @@
 <?php
 
 require_once "./model/CiudadanoModel.php";
+require_once "./model/JefeModel.php";
 require_once "./view/CiudadanoView.php";
-require_once  "SecuredController.php";
+//require_once  "SecuredController.php";
 
-class CiudadanoController extends SecuredController
+class CiudadanoController //extends SecuredController
 {
   private $view;
   private $model;
@@ -14,12 +15,16 @@ class CiudadanoController extends SecuredController
 
   function __construct()
   {
-    parent::__construct();
+    //parent::__construct();
 
     $this->model = new CiudadanoModel();
     $this->modelJefe = new JefeModel();
     $this->Titulo = "Lista de Lugares";
     $this->view = new CiudadanoView();
+  }
+
+  function Home(){
+    $this->view->MostrarHome($this->Titulo);
   }
  //Todo lo relacionado a Home
   function HomeBase($message = ''){

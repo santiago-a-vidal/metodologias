@@ -1,7 +1,7 @@
-{include file="view/templates/header.tpl"}
-{include file="view/templates/NavBar.tpl"}
+{include file="templates/header.tpl"}
+{include file="templates/NavBar.tpl"}
     <h3>{$Titulo}</h3>
-    <form method="post" action="verificarLogin">
+    <form method="post" action="ciudadano">
       <div class="modal-body">
             <div class="form-group">
               <label for="exampleInputEmail1">Usuario</label>
@@ -19,4 +19,4 @@
     </form>
 
 
-{include file="view/templates/footer.tpl"}
+{include file="templates/footer.tpl"}
