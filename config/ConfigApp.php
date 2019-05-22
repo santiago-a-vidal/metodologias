@@ -19,8 +19,10 @@ class ConfigApp
       'jefe'=> 'JefeController#Home',
       'ciudadano'=> 'CiudadanoController#Home',
       'formulario'=>'CiudadanoController#mostrarFormulario',
+      // Cree una funcion para mostrar el mapa de cada usuario para hacerlo mas rapido, en un futuro se cambiara
       'mapaciudadano1'=> 'CiudadanoController#VerMapaCiudadano1',
       'mapaciudadano2'=> 'CiudadanoController#VerMapaCiudadano2',
+      //Esto es para ver el mapa del jefe, pero no pude probar si anda
       'mapajefe'=> 'JefeController#VerMapaJefe',
       'AgregarDenuncia'=> 'CiudadanoController#insertarDenuncia'
     ];

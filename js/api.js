@@ -7,19 +7,9 @@ function addMarkerToGroup(group, coordinate, html) {
 }
 
 
-
+//Esta es la funcion que permite agregar todos los amrcadores en un mapa
 function addInfoBubble(map) {
 
-
-
-
-  // console.log(`${key}: ${value}`);
-
-
-    //let latitudes = document.querySelectorAll(".latitud")[0];//-37.330662;
-    //let longitudes = document.querySelectorAll(".longitud");//-59.121555 ;
-    let informacion = "hola"; //= document.getElementById('descripcionForm').value;
-    //alert(latitudes);
     let group = new H.map.Group();
 
 
@@ -32,44 +22,42 @@ function addInfoBubble(map) {
     });
     ui.addBubble(bubble);
     }, false);
-    // addMarkerToGroup(group, {lat:-37.318796, lng:-59.138583},);
-    //
-    // addMarkerToGroup(group, {lat:-37.325354, lng: -59.136346},
-    //     '<div ><a href=>Sarmiento y 9 de julio</a>' +
-    //     '</div><div >Basura<br>Cantidad: Baja</div>');
-    //
-    // addMarkerToGroup(group, {lat: -37.325986, lng: -59.147128},
-    //     '<div ><a href=>Av. Peron y Av. Espania</a>' +
-    //     '</div><div >Basura<br>Cantidad: Media</div>');
-
+//Estos son marcadores harcodeados
     addMarkerToGroup(group, {lat: -37.311726, lng: -59.128931},
         '<div ><a href=>Uriburu y Montiel</a>' +
         '</div><div >Basura<br>Cantidad: Media</div>');
 
-    //addMarkerToGroup(group, {lat: -37.321976, lng: -59.121555},
-      //  '<div ><a href=>Pinto y Moreno</a>' +
-      //  '</div><div >Basura<br>Cantidad: Alta</div>');
 
     addMarkerToGroup(group, {lat: -37.330662, lng: -59.128889},
         '<div ><a href=>Constitucion y Paz</a>' +
         '</div><div >Basura<br>Cantidad: Alta</div>');
 
+//Estos son marcadores que trae de la base de datos
+//le puse <100 porque no se como saber la cantidad de denuncias que hay cargadas en la base, entonces le mande 100 y fue
 for(let i =0 ; i< 100 ; i++){
+  //Busca en el map.tpl los elementos que tienen esa id
 let latitud = document.getElementById('latitud ' + i);
 let longitud = document.getElementById('longitud ' + i);
 let descripcion = document.getElementById('descripcion ' + i);
 
-
+//Corrobora que no sean nulo, porque al poner <100 hay una bocha que no van a existir
  if(latitud !== null &  longitud !== null){
+
+   //agarra el valor del elemento que se selecciono anteriormente
    latitud = latitud.value;
    longitud = longitud.value;
    descripcion = descripcion.value;
 
-
+//para poder insertar un marcardor necesitas usar la funcion addMarkerToGroup que es de la api
+//Esta funcion te pide que insertes un objeto que contenga latitud y longitud de marcador
+//entonces cree un objeto ubicacion con atributos: latitud y longitud, que tomaran los valores correspondientes
+//de los formularios
     const ubicacion = {
       lat: latitud,
       lng: longitud
   };
+
+  //la forma de llamar a los atributos del objeto "ubicacion" es como esta escrito aca
     addMarkerToGroup(group, {lat:ubicacion["lat"], lng:ubicacion["lng"]} ,informacion);
 
 }

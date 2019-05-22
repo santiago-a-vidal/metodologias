@@ -18,7 +18,7 @@
       <label for="imagenForm">Imagen</label>
     <input type="file" id="imagenes" name="imagenForm">
       </div>
-        <button type="submit" class="btn btn-primary">Agregar</button>
+        <button type="submit" class="btn btn-primary">cacacacaca</button>
       </form>
     </div>
 
