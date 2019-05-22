@@ -3,17 +3,18 @@
 
 <section>
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                Jefe de Cuadrilla: Nick Fury
-            </div>
-            <div class="col-sm">
-                Cliente: Steve Rogers
-            </div>
-            <div class="col-sm">
-                Cliente: Tony Stark
-            </div>
+      <div class="card icono1" style="width: 18rem;">
+        <img class="card-img-top" src="imagenes/jefe.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Jefe de cuadrilla</p>
         </div>
+      </div>
+      <div class="card icono2" style="width: 18rem;">
+        <img class="card-img-top" src="imagenes/usuario.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Ciudadano</p>
+        </div>
+      </div>
     </div>
 </section>
 {include file="templates/footer.tpl"}

@@ -11,7 +11,7 @@
         <ul class="navbar-nav mr-auto">
           <!-- Dentro de cada "li" se crea un boton de la barra de navegacion -->
           <li class="nav-item active logonav">
-          <img src="img/logonav.png" class="img-fluid" alt="Logo Municipalidad">
+          <img src="imagenes/logonav.png" class="img-fluid" alt="Logo Municipalidad">
           </li>
           <li class="nav-item active">
             <a class="nav-link btn btn-primary" href="#">Inicio <span class="sr-only">(current)</span></a>
@@ -30,12 +30,10 @@
 <!--          <div class=" nav-item active  bd-navbar-nav ">-->
 <!--            <a class=" nav-link btn btn-primary"  style="color: white;" href="#">Registrarte</a>-->
 <!--          </div>-->
-          <div class=" nav-item active  bd-navbar-nav ">
-            <a class=" nav-link btn btn-primary"  style="color: white;" href="#">Cerrar Sesión</a>
-          </div>
+          
         </div>
           </nav>
   </div>
   <div class="container logo">
-        <img src="./view/web/img/logotandil.jpg" class="img-fluid" alt="Logo Municipalidad">
+        <img src="imagenes/logotandil.jpg" class="img-fluid" alt="Logo Municipalidad">
   </div>

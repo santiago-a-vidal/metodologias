@@ -1,5 +1,5 @@
 {include file="templates/header.tpl"}
-{include file="templates/NavBar.tpl"}
+{include file="templates/NavBarLogueado.tpl"}
 <div class="container">
   <div class="mapa">
 
