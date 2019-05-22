@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-22 03:41:51
+/* Smarty version 3.1.33, created on 2019-05-22 06:46:50
   from 'C:\xampp\htdocs\proyectos\metodologias\templates\NavBar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce4a8df982765_85452404',
+  'unifunc' => 'content_5ce4d43a275962_06484988',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '60eba357401bc6c1760ec18cbc215aab479e0137' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\metodologias\\templates\\NavBar.tpl',
-      1 => 1558488700,
+      1 => 1558500300,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce4a8df982765_85452404 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce4d43a275962_06484988 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="contenedor_Navbar barra">
 
     <nav class="navbar navbar-expand-xl navbar-dark bg-primary  ">
@@ -39,9 +39,7 @@ function content_5ce4a8df982765_85452404 (Smarty_Internal_Template $_smarty_tpl)
           <li class="nav-item active">
             <a class="nav-link btn btn-primary" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link btn btn-primary mapaBoton" href="#">Ver Mapa <span class="sr-only">(current)</span></a>
-          </li>
+        
           <li class="nav-item active bd-navbar-nav  flex-row">
             <a class="nav-link btn btn-primary" href="#">Contactos <span class="sr-only">(current)</span></a>
           </li>
@@ -53,7 +51,7 @@ function content_5ce4a8df982765_85452404 (Smarty_Internal_Template $_smarty_tpl)
 <!--          <div class=" nav-item active  bd-navbar-nav ">-->
 <!--            <a class=" nav-link btn btn-primary"  style="color: white;" href="#">Registrarte</a>-->
 <!--          </div>-->
-          
+
         </div>
           </nav>
   </div>

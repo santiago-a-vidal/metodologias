@@ -22,9 +22,11 @@ class CiudadanoModel
     return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
 
-  function GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario)  {
-    $sentencia = $this->db->prepare("INSERT INTO denuncia(ubicacion,descripcion,estado,imagen,id_usuario) VALUES(?,?,?,?,?)");
-  $sentencia->execute(array($ubicacion,$descripcion,$estado,$imagen,$id_usuario));
+
+
+  function GuardarDenuncia($descripcion,$estado,$id_usuario,$latitud,$longitud)  {
+    $sentencia = $this->db->prepare("INSERT INTO denuncia(descripcion,estado,id_usuario,latitud,longitud) VALUES(?,?,?,?,?)");
+  $sentencia->execute(array($descripcion,$estado,$id_usuario,$latitud,$longitud));
 
   }
 
