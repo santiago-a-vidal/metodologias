@@ -38,7 +38,7 @@ class CiudadanoController //extends SecuredController
  $estado = 1;
  $id_usuario = 2;
 $imagen = $_POST["imagenForm"];
-
+//  $imagenes = $_FILES['imagenes']['tmp_name'];
 $denuncia = $this->model ->GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario);
 
   header('Location: '.home);
