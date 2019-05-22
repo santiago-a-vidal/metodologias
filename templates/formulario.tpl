@@ -1,7 +1,7 @@
 {include file="templates/header.tpl"}
 {include file="templates/NavBarLogeado.tpl"}
     <h1>{$Titulo}</h1>
-    <div class="container">
+    <div class="container formu">
       <h2>Formulario</h2>
       <form method="post" action="AgregarDenuncia">
 
@@ -18,7 +18,7 @@
       <label for="imagenForm">Imagen</label>
     <input type="file" id="imagenes" name="imagenForm">
       </div>
-        <button type="submit" class="btn btn-primary">cacacacaca</button>
+        <button type="submit" class="btn btn-primary">Agregar</button>
       </form>
     </div>
 
