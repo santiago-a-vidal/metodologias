@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-05-2019 a las 00:38:02
+-- Tiempo de generación: 23-05-2019 a las 01:02:34
 -- Versión del servidor: 10.1.32-MariaDB
 -- Versión de PHP: 7.2.5
 
@@ -30,11 +30,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `denuncia` (
   `id_denuncia` int(11) NOT NULL,
-  `longitud` varchar(200) NOT NULL,
-  `latitud` varchar(200) NOT NULL,
+  `longitud` float NOT NULL,
+  `latitud` float NOT NULL,
   `descripcion` varchar(200) NOT NULL,
   `estado` tinyint(4) NOT NULL,
-  `imagen` varchar(200) NOT NULL,
+  `imagen` varchar(200) DEFAULT NULL,
   `id_usuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -75,7 +75,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `denuncia`
 --
 ALTER TABLE `denuncia`
-  MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`

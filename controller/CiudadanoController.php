@@ -34,15 +34,16 @@ class CiudadanoController //extends SecuredController
     $id_usuario = $_POST["id_usuario_form"];
     $latitud = $_POST["latitudForm"];
     $descripcion = $_POST["descripcionForm"];
+    $imagen = $_POST["imagenForm"];
     $estado = 0;
     //$imagen = $_POST["imagenForm"];
 
 
  //todo esto de insertar la imagen lo saque para poder porbar que esto ande, en un futuro se implementara
 
-//$imagen = $_POST["imagenForm"];
 
- $this->model->GuardarDenuncia($descripcion,$longitud,$latitud,$estado,$id_usuario);
+
+ $this->model->GuardarDenuncia($descripcion,$longitud,$latitud,$estado,$imagen,$id_usuario);
 header(formulario);
 }
 

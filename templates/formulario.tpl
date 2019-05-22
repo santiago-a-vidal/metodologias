@@ -19,15 +19,14 @@
         </div>
         <div class="form-group">
       <label for="imagenForm">Imagen</label>
-    <input type="file" id="imagenes" name="imagenForm">
+    <input type="file" id="imagenForm" name="imagenForm">
       </div>
-<<<<<<< HEAD
+
       <!-- Este input sirve para saber con que id_usuario se va a insertar la denuncia en la base de datos -->
       <input type="" class=" hidden id_usuario_form" id="id_usuario_form" name="id_usuario_form" value="{$usuario['id_usuario']}">
         <button type="submit" class="btn btn-primary">Enviar</button>
-=======
+
         <button type="submit" class="btn btn-primary">Agregar</button>
->>>>>>> 6d3605087ef98717a9f2efb7bd076a0fdd715a33
       </form>
     </div>
 
