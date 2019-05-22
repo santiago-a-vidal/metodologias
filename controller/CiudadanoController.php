@@ -32,8 +32,12 @@ class CiudadanoController //extends SecuredController
       $this->view->ViewBase($message, $this->Titulo, $Mapa);
   }
 
+
+//Aca estan las funciones para ver cada mapa de cada usuario, esta hardcodeadisimo.
 function VerMapaCiudadano1(){
+  //Traigo al usuario con id 1
   $usuario = $this->model->GetUsuario(1);
+  //Traigo las denuncias del usuario con id 1
   $denuncias = $this->model->GetDenuncias(1);
   $this->view->MostrarMapa($usuario[0],$denuncias);
 }
@@ -46,21 +50,22 @@ function VerMapaCiudadano2(){
 
 
   function insertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
-    //console.log($_POST["longitudForm"]);
 
     echo console.log($_POST["longitudForm"]);
     $longitud = $_POST["longitudForm"];
     echo $_POST["longitudForm"];
-
+//Se trae el usuario de un input escondido en el form para saber que usuario asignarle a cada denuncia
     $id_usuario = $_POST["id_usuario_form"];
 
  $latitud = $_POST["latitudForm"];
 
  $descripcion = $_POST["descripcionForm"];
  $estado = 0;
+ //todo esto de insertar la imagen lo saque para poder porbar que esto ande, en un futuro se implementara
+
 //$imagen = $_POST["imagenForm"];
 
-$denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$longitud,$latitud); //le saque lo de la imagen porque rompia todo
+$denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$longitud,$latitud);
 
   header(MAPACIUDADANO);
 
