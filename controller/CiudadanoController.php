@@ -24,23 +24,11 @@ class CiudadanoController //extends SecuredController
   }
 
   function Home(){
-    $usuario = $this->model->GetUsuario(1);
-    $denuncias = $this->model->GetDenuncias(1);
-    $this->view->MostrarHome($this->Titulo);
-    $this->view->MostrarMapa($usuario[0],$denuncias);
+    //Aca estan las funciones para ver cada mapa de cada usuario, esta hardcodeadisimo.
+    $usuario = $this->model->GetUsuario(1);   //Traigo al usuario con id 1
+    $denuncias = $this->model->GetDenuncias(1);   //Traigo las denuncias del usuario con id 1
+    $this->view->MostrarMapa($this->Titulo,$usuario,$denuncias);
   }
-
-
-
-//Aca estan las funciones para ver cada mapa de cada usuario, esta hardcodeadisimo.
-function VerMapaCiudadano1(){
-  //Traigo al usuario con id 1
-  $usuario = $this->model->GetUsuario(1);
-  //Traigo las denuncias del usuario con id 1
-  $denuncias = $this->model->GetDenuncias(1);
-  $this->view->MostrarMapa($usuario[0],$denuncias);
-}
-
 
   function insertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
 

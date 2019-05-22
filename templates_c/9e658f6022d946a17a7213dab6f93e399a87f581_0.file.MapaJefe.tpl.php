@@ -1,30 +1,30 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-22 22:04:07
+/* Smarty version 3.1.33, created on 2019-05-22 22:59:08
   from 'C:\xampp\htdocs\metodologias\templates\MapaJefe.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce5ab375c8786_64693341',
+  'unifunc' => 'content_5ce5b81c562e87_37790575',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e658f6022d946a17a7213dab6f93e399a87f581' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\MapaJefe.tpl',
-      1 => 1558554917,
+      1 => 1558558744,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templates/header.tpl' => 1,
-    'file:templates/NavBar.tpl' => 1,
+    'file:templates/NavBarLogeadoJefe.tpl' => 1,
   ),
 ),false)) {
-function content_5ce5ab375c8786_64693341 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce5b81c562e87_37790575 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->_subTemplateRender("file:templates/NavBar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+$_smarty_tpl->_subTemplateRender("file:templates/NavBarLogeadoJefe.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 

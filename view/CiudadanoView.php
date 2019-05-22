@@ -11,29 +11,22 @@ class CiudadanoView
       $this->Smarty = new Smarty();
     }
 
-    function PublicView(){
 
-    }
-  //  function mostrarFormulario($Titulo,$id_usuario){
-    //  $this->Smarty->assign('id_usuario',$id_usuario);
-  //    $this->Smarty->assign('Titulo',"$Titulo");
-  //    $this->Smarty->display('templates/AgregarDenuncia.tpl');
-  //  }
-    function ViewBase()
-    {
-    }
-    function MostrarHome($Titulo){
-       $this->Smarty->assign('Titulo',"$Titulo");
-      $this->Smarty->display('templates/HomePublico.tpl');
-    }
+
+  //  function MostrarHome($Titulo){
+  //     $this->Smarty->assign('Titulo',"$Titulo");
+  //    $this->Smarty->display('templates/HomePublico.tpl');
 
     function MostrarFormulario($Titulo){
       $this->Smarty->assign('Titulo',"$Titulo");
       $this->Smarty->display('templates/formulario.tpl');
     }
-    function MostrarMapa($usuario,$denuncias){
-     $this->Smarty->assign('usuario',$usuario);
-    $this->Smarty->assign('denuncias',$denuncias);
+    function MostrarMapa($Titulo, $usuario,$denuncias){
+      $this->Smarty->assign('Titulo',"$Titulo");
+      $this->Smarty->assign('usuario',$usuario);
+     $this->Smarty->assign('denuncias',$denuncias);
+     $this->Smarty->display('templates/HomePublico.tpl');
+
 
     }
 

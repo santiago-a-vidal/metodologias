@@ -24,9 +24,9 @@ class CiudadanoModel
 
 
   function GetUsuario($id_usuario){
-    $sentencia = $this->db->prepare( "select * from usuario where id_usuario=? ");
+    $sentencia = $this->db->prepare( "select id_usuario from usuario where id_usuario=? limit 1");
     $sentencia->execute(array($id_usuario));
-    return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+    return $sentencia->fetch(PDO::FETCH_ASSOC);
   }
 
 
