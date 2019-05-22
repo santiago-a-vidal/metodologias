@@ -30,9 +30,9 @@ class CiudadanoModel
   }
 
 
-  function GuardarDenuncia($descripcion,$estado,$id_usuario,$latitud,$longitud)  {
-    $sentencia = $this->db->prepare("INSERT INTO denuncia(descripcion,estado,id_usuario,latitud,longitud) VALUES(?,?,?,?,?)");
-  $sentencia->execute(array($descripcion,$estado,$id_usuario,$latitud,$longitud));
+  function GuardarDenuncia($descripcion,$longitud,$latitud,$estado,$id_usuario)  {
+    $sentencia = $this->db->prepare("INSERT INTO denuncia(descripcion,longitud,latitud,estado,id_usuario) VALUES(?,?,?,?,?)");
+  $sentencia->execute(array($descripcion,$longitud,$latitud,$estado,$id_usuario,));
 
   }
 

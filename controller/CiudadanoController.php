@@ -1,7 +1,6 @@
 <?php
 
 require_once "./model/CiudadanoModel.php";
-require_once "./model/JefeModel.php";
 require_once "./view/CiudadanoView.php";
 //require_once  "SecuredController.php";
 
@@ -9,7 +8,6 @@ class CiudadanoController //extends SecuredController
 {
   private $view;
   private $model;
-  private $modelJefe;
   private $Titulo;
   private $controllerAdmin;
 
@@ -18,7 +16,6 @@ class CiudadanoController //extends SecuredController
     //parent::__construct();
 
     $this->model = new CiudadanoModel();
-    $this->modelJefe = new JefeModel();
     $this->Titulo = "Ciudadano";
     $this->view = new CiudadanoView();
   }
@@ -31,28 +28,23 @@ class CiudadanoController //extends SecuredController
   }
 
   function insertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
-
-    echo console.log($_POST["longitudForm"]);
     $longitud = $_POST["longitudForm"];
-    echo $_POST["longitudForm"];
+  //  echo $_POST["longitudForm"];
 //Se trae el usuario de un input escondido en el form para saber que usuario asignarle a cada denuncia
     $id_usuario = $_POST["id_usuario_form"];
-
     $latitud = $_POST["latitudForm"];
-
     $descripcion = $_POST["descripcionForm"];
     $estado = 0;
     //$imagen = $_POST["imagenForm"];
 
- $descripcion = $_POST["descripcionForm"];
- $estado = 0;
+
  //todo esto de insertar la imagen lo saque para poder porbar que esto ande, en un futuro se implementara
 
 //$imagen = $_POST["imagenForm"];
 
-$denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$longitud,$latitud);
-
-  header(MAPACIUDADANO);
+ $this->model->GuardarDenuncia($descripcion,$longitud,$latitud,$estado,$id_usuario);
+header(formulario);
+}
 
 // //como subir la imagen --->   func
 // //tion postImagen($param){
@@ -69,7 +61,7 @@ $denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$lon
 ////*    }
 //  $this->model->GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario);
 
-  }
+
 
 
 function mostrarFormulario(){ //lleva al usuario al formulario para crear una nueva denuncia
