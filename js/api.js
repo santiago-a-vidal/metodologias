@@ -57,12 +57,15 @@ function addInfoBubble(map) {
 for(let i =0 ; i< 10 ; i++){
 let latitud = document.getElementById('latitud ' + i);
 let longitud = document.getElementById('longitud ' + i);
+let descripcion = document.getElementById('descripcion ' + i);
+
 
  if(latitud !== null &  longitud !== null){
    latitud = latitud.value;
    longitud = longitud.value;
+   descripcion = descripcion.value;
 
-  alert(latitud)
+
     const ubicacion = {
       lat: latitud,
       lng: longitud

@@ -28,10 +28,9 @@ class CiudadanoView
     }
 
 
-    function MostrarMapa($denuncias){
+    function MostrarMapa($usuario,$denuncias){
+      $this->Smarty->assign('usuario',$usuario);
       $this->Smarty->assign('denuncias',$denuncias);
-      $numero = 4;
-     echo $numero;
       $this->Smarty->display('templates/Mapa.tpl');
     }
 

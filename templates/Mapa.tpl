@@ -24,6 +24,7 @@
       <label for="exampleInputPassword1">Informacion</label>
       <input type="text"  class="descripcionForm" id="descripcionForm" name="descripcionForm"   >
     </div>
+    <input type="" class="hidden id_usuario_form" id="id_usuario_form"  value="{$usuario['id_usuario']}">
     <button type="sumbit" name="button"  id="boton">Submit</button>
   </form>
 </div>
