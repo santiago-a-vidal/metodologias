@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../view/web/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../view/web/css/style.css">
+  <title>Inicio | Manejo de Basura</title>
+</head>
+  <body>
+    <header>
+    <!-- Dentro del div contenedor_Navbar va la imagen y la barra de navegacion -->
+
+
+    <div class="contenedor_Navbar barra">
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-primary  ">
+    <!-- <a class="navbar-brand " href="#">Municipio de Tandil</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+      <!-- Dentro de este div se crea una lista donde se encuentra cada boton de la navbar del lado izquierdo-->
+      <div class="collapse navbar-collapse" id="navbarsExample06">
+        <ul class="navbar-nav mr-auto">
+          <!-- Dentro de cada "li" se crea un boton de la barra de navegacion -->
+          <li class="nav-item active logonav">
+          <img src="../view/web/img/logonav.png" class="img-fluid" alt="Logo Municipalidad">
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-primary" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-primary mapaBoton" href="#">Ver Mapa <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active bd-navbar-nav  flex-row">
+            <a class="nav-link btn btn-primary" href="#">Contactos <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <!-- Dentro de este div se crea una lista donde se encuentra cada boton de la navbar del lado derecho-->
+<!--          <div class=" nav-item active  bd-navbar-nav flex-row">-->
+<!--            <a class=" nav-link btn btn-primary"  style="color: white;" href="#">Iniciar Sesión</a>-->
+<!--          </div>-->
+<!--          <div class=" nav-item active  bd-navbar-nav ">-->
+<!--            <a class=" nav-link btn btn-primary"  style="color: white;" href="#">Registrarte</a>-->
+<!--          </div>-->
+          <div class=" nav-item active  bd-navbar-nav ">
+            <a class=" nav-link btn btn-primary"  style="color: white;" href="#">Cerrar Sesión</a>
+          </div>
+        </div>
+          </nav>
+  </div>
+  <div class="container logo">
+        <img src="../view/web/img/logotandil.jpg" class="img-fluid" alt="Logo Municipalidad">
+  </div>
+  </header>
+
+
+
+
+    <div class="container">
+      <div class="mapa">
+
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zv4ylvSErvhJ9lB-qKAWXYfVM6jOeyIA" width="940" height="480"></iframe>
+
+      </div>
+
+    <script src="../view/web/js/main.js"></script>
+    <script src="../view/web/js/jquery-3.3.1.min.js"></script>
+    <script src="../view/web/js/popper.js"></script>
+    <script src="../view/web/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
