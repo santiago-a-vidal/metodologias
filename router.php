@@ -29,9 +29,9 @@
           }
       }else{
 
-        echo "carajo";
-        //$controller =  new LoginController();
-        // echo $controller->login();
+
+        $controller =  new LoginController();
+        echo $controller->Home();
       }
   }
  ?>

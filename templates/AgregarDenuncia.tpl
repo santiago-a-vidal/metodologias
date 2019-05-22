@@ -1,5 +1,5 @@
 {include file="templates/header.tpl"}
-{include file="templates/NavBar.tpl"}
+{include file="templates/NavBarLogeado.tpl"}
     <h1>{$Titulo}</h1>
     <div class="container">
       <h2>Formulario</h2>

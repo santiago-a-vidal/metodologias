@@ -15,7 +15,7 @@ class ConfigApp
     public static $ACTION = 'action';
     public static $PARAMS = 'params';
     public static $ACTIONS = [
-      'home' => 'LoginController#base', // CAMBIAR DESPUÉS
+      'home' => 'LoginController#Home', // CAMBIAR DESPUÉS
       'jefe'=> 'JefeController#Home',
       'ciudadano'=> 'CiudadanoController#Home',
       'formulario'=>'CiudadanoController#mostrarFormulario',

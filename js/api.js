@@ -50,26 +50,29 @@ function addInfoBubble(map) {
       //  '<div ><a href=>Pinto y Moreno</a>' +
       //  '</div><div >Basura<br>Cantidad: Alta</div>');
 
-    // addMarkerToGroup(group, {lat: -37.330662, lng: -59.128889},
-    //     '<div ><a href=>Constitucion y Paz</a>' +
-    //     '</div><div >Basura<br>Cantidad: Alta</div>');
+    addMarkerToGroup(group, {lat: -37.330662, lng: -59.128889},
+        '<div ><a href=>Constitucion y Paz</a>' +
+        '</div><div >Basura<br>Cantidad: Alta</div>');
 
-// for(let i =0 ; i< 10 ; i++){
-let latitud = document.getElementById('latitud ' + 4).value;
-let longitud = document.getElementById('longitud ' + 4).value;
+for(let i =0 ; i< 10 ; i++){
+let latitud = document.getElementById('latitud ' + i);
+let longitud = document.getElementById('longitud ' + i);
 
-// if(latitud !== 'null' &  longitud !== 'null'){
-//   alert(latitud.value)
+ if(latitud !== null &  longitud !== null){
+   latitud = latitud.value;
+   longitud = longitud.value;
+
+  alert(latitud)
     const ubicacion = {
       lat: latitud,
       lng: longitud
   };
     addMarkerToGroup(group, {lat:ubicacion["lat"], lng:ubicacion["lng"]} ,informacion);
 
+}
 
 
-
-
+}
 }
 
 
