@@ -32,6 +32,11 @@ class CiudadanoController //extends SecuredController
       $this->view->ViewBase($message, $this->Titulo, $Mapa);
   }
 
+function VerMapa(){
+$this->view->MostrarMapa();
+}
+
+
   function insertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
  $ubicacion = $_POST["ubicacionForm"];
  $descripcion = $_POST["descripcionForm"];
