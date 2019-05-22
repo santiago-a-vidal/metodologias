@@ -17,7 +17,8 @@ class ConfigApp
       'jefe'=> 'JefeController#Home',
       'ciudadano'=> 'CiudadanoController#Home',
       'formulario'=>'CiudadanoController#mostrarFormulario',
-      'AgregarDenuncia'=> 'CiudadanoController#insertarDenuncia',
+      'mapaciudadano'=> 'CiudadanoController#VerMapa',
+      'AgregarDenuncia'=> 'CiudadanoController#insertarDenuncia'
     ];
 
     }

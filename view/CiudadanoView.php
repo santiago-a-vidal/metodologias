@@ -27,6 +27,11 @@ class CiudadanoView
         $this->Smarty->display('templates/AgregarDenuncia.tpl');
     }
 
+
+    function MostrarMapa(){
+      $this->Smarty->display('templates/Mapa.tpl');
+    }
+
 }
 
 
