@@ -10,6 +10,10 @@
  .barra a:hover{
 background-color: blue;
  }
+.cont{
+  margin-top: 100px;
+  margin-left: 100px;
+}
 
 
 .mapa{
