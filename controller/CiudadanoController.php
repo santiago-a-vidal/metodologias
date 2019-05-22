@@ -50,6 +50,8 @@ function VerMapaCiudadano2(){
 
     echo console.log($_POST["longitudForm"]);
     $longitud = $_POST["longitudForm"];
+    echo $_POST["longitudForm"];
+
     $id_usuario = $_POST["id_usuario_form"];
 
  $latitud = $_POST["latitudForm"];

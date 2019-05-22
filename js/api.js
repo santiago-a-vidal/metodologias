@@ -54,7 +54,7 @@ function addInfoBubble(map) {
         '<div ><a href=>Constitucion y Paz</a>' +
         '</div><div >Basura<br>Cantidad: Alta</div>');
 
-for(let i =0 ; i< 10 ; i++){
+for(let i =0 ; i< 100 ; i++){
 let latitud = document.getElementById('latitud ' + i);
 let longitud = document.getElementById('longitud ' + i);
 let descripcion = document.getElementById('descripcion ' + i);
