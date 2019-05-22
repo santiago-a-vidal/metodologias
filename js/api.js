@@ -16,16 +16,13 @@ function addInfoBubble(map) {
   // console.log(`${key}: ${value}`);
 
 
-    let latitud = document.getElementById('Longitud').value;//-37.330662;
-    let longitud = document.getElementById('Latitud').value;//-59.121555 ;
-    let informacion = document.getElementById('Informacion').value;
-
+    //let latitudes = document.querySelectorAll(".latitud")[0];//-37.330662;
+    //let longitudes = document.querySelectorAll(".longitud");//-59.121555 ;
+    let informacion = "hola"; //= document.getElementById('descripcionForm').value;
+    //alert(latitudes);
     let group = new H.map.Group();
 
-    const ubicacion = {
-      lat: latitud,
-      lng: longitud
-  };
+
 
     map.addObject(group);
     group.addEventListener('tap', function (evt) {
@@ -35,15 +32,15 @@ function addInfoBubble(map) {
     });
     ui.addBubble(bubble);
     }, false);
-    addMarkerToGroup(group, {lat:-37.318796, lng:-59.138583},);
-
-    addMarkerToGroup(group, {lat:-37.325354, lng: -59.136346},
-        '<div ><a href=>Sarmiento y 9 de julio</a>' +
-        '</div><div >Basura<br>Cantidad: Baja</div>');
-
-    addMarkerToGroup(group, {lat: -37.325986, lng: -59.147128},
-        '<div ><a href=>Av. Peron y Av. Espania</a>' +
-        '</div><div >Basura<br>Cantidad: Media</div>');
+    // addMarkerToGroup(group, {lat:-37.318796, lng:-59.138583},);
+    //
+    // addMarkerToGroup(group, {lat:-37.325354, lng: -59.136346},
+    //     '<div ><a href=>Sarmiento y 9 de julio</a>' +
+    //     '</div><div >Basura<br>Cantidad: Baja</div>');
+    //
+    // addMarkerToGroup(group, {lat: -37.325986, lng: -59.147128},
+    //     '<div ><a href=>Av. Peron y Av. Espania</a>' +
+    //     '</div><div >Basura<br>Cantidad: Media</div>');
 
     addMarkerToGroup(group, {lat: -37.311726, lng: -59.128931},
         '<div ><a href=>Uriburu y Montiel</a>' +
@@ -53,11 +50,25 @@ function addInfoBubble(map) {
       //  '<div ><a href=>Pinto y Moreno</a>' +
       //  '</div><div >Basura<br>Cantidad: Alta</div>');
 
-    addMarkerToGroup(group, {lat: -37.330662, lng: -59.128889},
-        '<div ><a href=>Constitucion y Paz</a>' +
-        '</div><div >Basura<br>Cantidad: Alta</div>');
+    // addMarkerToGroup(group, {lat: -37.330662, lng: -59.128889},
+    //     '<div ><a href=>Constitucion y Paz</a>' +
+    //     '</div><div >Basura<br>Cantidad: Alta</div>');
 
+// for(let i =0 ; i< 10 ; i++){
+let latitud = document.getElementById('latitud ' + 4).value;
+let longitud = document.getElementById('longitud ' + 4).value;
+
+// if(latitud !== 'null' &  longitud !== 'null'){
+//   alert(latitud.value)
+    const ubicacion = {
+      lat: latitud,
+      lng: longitud
+  };
     addMarkerToGroup(group, {lat:ubicacion["lat"], lng:ubicacion["lng"]} ,informacion);
+
+
+
+
 
 }
 

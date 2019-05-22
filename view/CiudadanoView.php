@@ -28,9 +28,15 @@ class CiudadanoView
     }
 
 
-    function MostrarMapa(){
+    function MostrarMapa($denuncias){
+      $this->Smarty->assign('denuncias',$denuncias);
+      $numero = 4;
+     echo $numero;
       $this->Smarty->display('templates/Mapa.tpl');
     }
+
+
+
 
 }
 

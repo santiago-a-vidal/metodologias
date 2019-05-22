@@ -33,20 +33,28 @@ class CiudadanoController //extends SecuredController
   }
 
 function VerMapa(){
-$this->view->MostrarMapa();
+
+      $denuncias = $this->model->GetDenuncias(2);
+$this->view->MostrarMapa($denuncias);
 }
 
 
   function insertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
- $ubicacion = $_POST["ubicacionForm"];
+    //console.log($_POST["longitudForm"]);
+
+    echo console.log($_POST["longitudForm"]);
+    $longitud = $_POST["longitudForm"];
+
+ $latitud = $_POST["latitudForm"];
+
  $descripcion = $_POST["descripcionForm"];
  $estado = 1;
  $id_usuario = 2;
-$imagen = $_POST["imagenForm"];
+//$imagen = $_POST["imagenForm"];
 
-$denuncia = $this->model ->GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario);
+$denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$longitud,$latitud); //le saque lo de la imagen porque rompia todo
 
-  header('Location: '.home);
+  header(MAPACIUDADANO);
 
 // //como subir la imagen --->   func
 // //tion postImagen($param){
@@ -64,6 +72,8 @@ $denuncia = $this->model ->GuardarDenuncia($ubicacion,$descripcion,$estado,$imag
 //  $this->model->GuardarDenuncia($ubicacion,$descripcion,$estado,$imagen,$id_usuario);
 
   }
+
+
 function mostrarFormulario(){ //lleva al usuario al formulario para crear una nueva denuncia
   $this->view->MostrarHome($this->Titulo);
 }

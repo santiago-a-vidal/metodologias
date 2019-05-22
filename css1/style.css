@@ -21,4 +21,8 @@ background-color: blue;
 .logonav img{
   height: 35px;
 }
+
+.hidden{
+  visibility: hidden;
+}
 /*Se ajusta el tamaño de logo municipio de tandil en la barra de navegacion*/
