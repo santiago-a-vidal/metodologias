@@ -1,6 +1,8 @@
 <?php
 //require_once  "SecuredController.php";
- 
+require_once "./model/JefeModel.php";
+require_once "./view/JefeView.php";
+
 class JefeController //extends SecuredController
 {
   function __construct()
@@ -9,7 +11,7 @@ class JefeController //extends SecuredController
   $this->model = new JefeModel();
   $this->view = new JefeView();
 }
-function HomeJefe($message = ''){
+function Home($message = ''){
     $Mapa = $this->model->GetDenunciasActivas(); // llama  la funcion que carga todas las denuncias al mapa del jefe
     $this->view->ViewBase($message, $this->Titulo, $Mapa);
 }

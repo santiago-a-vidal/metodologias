@@ -14,7 +14,7 @@ class LoginController
 
   }
 
-  function base(){
+  function Home(){
     $this->view->mostrarHomeBase();
   }
 

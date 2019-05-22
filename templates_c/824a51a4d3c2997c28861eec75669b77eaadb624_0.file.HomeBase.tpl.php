@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-22 03:20:01
+/* Smarty version 3.1.33, created on 2019-05-22 03:39:49
   from 'C:\xampp\htdocs\metodologias\templates\HomeBase.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce4a3c14ee179_15012528',
+  'unifunc' => 'content_5ce4a8653c4d84_90861737',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '824a51a4d3c2997c28861eec75669b77eaadb624' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\HomeBase.tpl',
-      1 => 1558487995,
+      1 => 1558489187,
       2 => 'file',
     ),
   ),
@@ -23,23 +23,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ce4a3c14ee179_15012528 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce4a8653c4d84_90861737 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:templates/NavBar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <section>
     <div class="container">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="imagenes/icono1.png" alt="Card image cap">
+      <div class="card icono1" style="width: 18rem;">
+  <a class="nav-link active home" href="jefe">
+        <img class="card-img-top" src="imagenes\jefe.png" alt="Card image cap">
+                </a>
         <div class="card-body">
           <p class="card-text">Jefe de cuadrilla</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card icono2" style="width: 18rem;">
+        <a class="nav-link active home" href="ciudadano">
         <img class="card-img-top" src="imagenes/usuario.png" alt="Card image cap">
+              </a>
         <div class="card-body">
-          <p class="card-text">Ciudadano</p>
+              
+            <p class="card-text">Ciudadano</p>
         </div>
       </div>
     </div>

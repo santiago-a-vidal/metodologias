@@ -4,15 +4,20 @@
 <section>
     <div class="container">
       <div class="card icono1" style="width: 18rem;">
-        <img class="card-img-top" src="imagenes/jefe.png" alt="Card image cap">
+  <a class="nav-link active home" href="jefe">
+        <img class="card-img-top" src="imagenes\jefe.png" alt="Card image cap">
+                </a>
         <div class="card-body">
           <p class="card-text">Jefe de cuadrilla</p>
         </div>
       </div>
       <div class="card icono2" style="width: 18rem;">
+        <a class="nav-link active home" href="ciudadano">
         <img class="card-img-top" src="imagenes/usuario.png" alt="Card image cap">
+              </a>
         <div class="card-body">
-          <p class="card-text">Ciudadano</p>
+              
+            <p class="card-text">Ciudadano</p>
         </div>
       </div>
     </div>
