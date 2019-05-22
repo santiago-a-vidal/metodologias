@@ -21,6 +21,12 @@ function Home($message = ''){
 
     }
 
+
+
+    function VerMapaJefe(){
+      $denuncias = $this->model->GetDenunciasActivas();
+      $this->view->MostrarMapaJefe($denuncias);
+    }
 }
 
 ?>

@@ -7,7 +7,7 @@
     <div id="map" class="mx-auto" style="width: 1120px; height: 580px; background: grey" </div>
 
 
-<div class="">
+<!-- <div class="">
   <form method="post" action="AgregarDenuncia">
     <div class="form-group">
       <label for="exampleInputEmail1">Longitud</label>
@@ -23,12 +23,11 @@
     <div class="form-group">
       <label for="exampleInputPassword1">Informacion</label>
       <input type="text"  class="descripcionForm" id="descripcionForm" name="descripcionForm"   >
-      <input type="" class=" hidden id_usuario_form" id="id_usuario_form" name="id_usuario_form" value="{$usuario['id_usuario']}">
-
     </div>
+    <input type="" class="hidden id_usuario_form" id="id_usuario_form"  value="{$usuario['id_usuario']}">
     <button type="sumbit" name="button"  id="boton">Submit</button>
   </form>
-</div>
+</div> -->
 
 
 <div class="">

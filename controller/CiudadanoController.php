@@ -32,10 +32,16 @@ class CiudadanoController //extends SecuredController
       $this->view->ViewBase($message, $this->Titulo, $Mapa);
   }
 
-function VerMapa(){
+function VerMapaCiudadano1(){
+  $usuario = $this->model->GetUsuario(1);
+  $denuncias = $this->model->GetDenuncias(1);
+  $this->view->MostrarMapa($usuario[0],$denuncias);
+}
 
-      $denuncias = $this->model->GetDenuncias(2);
-$this->view->MostrarMapa($denuncias);
+function VerMapaCiudadano2(){
+  $usuario = $this->model->GetUsuario(2);
+  $denuncias = $this->model->GetDenuncias(2);
+  $this->view->MostrarMapa($usuario[0],$denuncias);
 }
 
 
@@ -44,12 +50,14 @@ $this->view->MostrarMapa($denuncias);
 
     echo console.log($_POST["longitudForm"]);
     $longitud = $_POST["longitudForm"];
+    echo $_POST["longitudForm"];
+
+    $id_usuario = $_POST["id_usuario_form"];
 
  $latitud = $_POST["latitudForm"];
 
  $descripcion = $_POST["descripcionForm"];
- $estado = 1;
- $id_usuario = 2;
+ $estado = 0;
 //$imagen = $_POST["imagenForm"];
 
 $denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$longitud,$latitud); //le saque lo de la imagen porque rompia todo
