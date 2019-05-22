@@ -11,11 +11,11 @@ class LoginView
     $this->Smarty = new Smarty();
   }
 
-  function mostrarLogin($message = '')
+  function mostrarHomeBase($message = '')
   {
     $this->Smarty->assign('Titulo',"Inicie sesión");
     $this->Smarty->assign('Message',$message);
-    $this->Smarty->display('templates/Login.tpl');
+    $this->Smarty->display('templates/HomeBase.tpl');
   }
 
 }

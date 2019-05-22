@@ -1,9 +1,19 @@
-{include file="header.tpl"}
-{include file="NavBarLogeado.tpl"}
+{include file="templates/header.tpl"}
+{include file="templates/NavBar.tpl"}
+
+<section>
     <div class="container">
-      <div class="mapa">
-
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zv4ylvSErvhJ9lB-qKAWXYfVM6jOeyIA" width="940" height="480"></iframe>
-
-      </div>
-{include file="footer.tpl"}
+        <div class="row">
+            <div class="col-sm">
+                Jefe de Cuadrilla: Nick Fury
+            </div>
+            <div class="col-sm">
+                Cliente: Steve Rogers
+            </div>
+            <div class="col-sm">
+                Cliente: Tony Stark
+            </div>
+        </div>
+    </div>
+</section>
+{include file="templates/footer.tpl"}

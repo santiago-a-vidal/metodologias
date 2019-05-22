@@ -14,8 +14,8 @@ class LoginController
 
   }
 
-  function login(){
-    $this->view->mostrarLogin();
+  function base(){
+    $this->view->mostrarHomeBase();
   }
 
   function logout(){
