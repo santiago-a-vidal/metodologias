@@ -52,17 +52,15 @@ function VerMapaCiudadano1(){
 
     $latitud = $_POST["latitudForm"];
 
-<<<<<<< HEAD
     $descripcion = $_POST["descripcionForm"];
     $estado = 0;
     //$imagen = $_POST["imagenForm"];
-=======
+
  $descripcion = $_POST["descripcionForm"];
  $estado = 0;
  //todo esto de insertar la imagen lo saque para poder porbar que esto ande, en un futuro se implementara
 
 //$imagen = $_POST["imagenForm"];
->>>>>>> d4eb5674572a18243c140e3ed33500fbc562eca7
 
 $denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$longitud,$latitud);
 
