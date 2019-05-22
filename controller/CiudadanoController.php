@@ -19,7 +19,7 @@ class CiudadanoController //extends SecuredController
 
     $this->model = new CiudadanoModel();
     $this->modelJefe = new JefeModel();
-    $this->Titulo = "Lista de Lugares";
+    $this->Titulo = "Ciudadano";
     $this->view = new CiudadanoView();
   }
 

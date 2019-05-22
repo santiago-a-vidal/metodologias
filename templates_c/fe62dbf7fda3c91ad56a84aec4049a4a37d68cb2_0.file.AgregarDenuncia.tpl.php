@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-22 04:25:23
+/* Smarty version 3.1.33, created on 2019-05-22 22:35:45
   from 'C:\xampp\htdocs\metodologias\templates\AgregarDenuncia.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce4b313090886_05323342',
+  'unifunc' => 'content_5ce5b2a16570c4_23980171',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fe62dbf7fda3c91ad56a84aec4049a4a37d68cb2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\AgregarDenuncia.tpl',
-      1 => 1558491916,
+      1 => 1558557344,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     'file:templates/header.tpl' => 1,
     'file:templates/NavBarLogeado.tpl' => 1,
-    'file:templates/Mapa.tpl' => 1,
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ce4b313090886_05323342 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce5b2a16570c4_23980171 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:templates/NavBarLogeado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -46,10 +45,10 @@ $_smarty_tpl->_subTemplateRender("file:templates/NavBarLogeado.tpl", $_smarty_tp
       <label for="imagenForm">Imagen</label>
     <input type="file" id="imagenes" name="imagenForm">
       </div>
-        <button type="submit" class="btn btn-primary">Agregar</button>
+        <button type="submit" class="btn btn-primary">cacacacaca</button>
       </form>
     </div>
-<?php $_smarty_tpl->_subTemplateRender("file:templates/Mapa.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->_subTemplateRender("file:templates/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+
+<?php $_smarty_tpl->_subTemplateRender("file:templates/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 }
