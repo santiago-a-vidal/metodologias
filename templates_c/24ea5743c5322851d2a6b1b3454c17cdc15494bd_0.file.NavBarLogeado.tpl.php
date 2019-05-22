@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-22 04:02:11
+/* Smarty version 3.1.33, created on 2019-05-22 22:43:09
   from 'C:\xampp\htdocs\metodologias\templates\NavBarLogeado.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce4ada31e0782_05165110',
+  'unifunc' => 'content_5ce5b45d150029_50801781',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '24ea5743c5322851d2a6b1b3454c17cdc15494bd' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\NavBarLogeado.tpl',
-      1 => 1558490515,
+      1 => 1558557778,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce4ada31e0782_05165110 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce5b45d150029_50801781 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class="contenedor_Navbar barra">
@@ -36,10 +36,9 @@ function content_5ce4ada31e0782_05165110 (Smarty_Internal_Template $_smarty_tpl)
           <img src="imagenes/logonav.png" class="img-fluid" alt="Logo Municipalidad">
           </li>
           <li class="nav-item active">
-            <a class="nav-link btn btn-primary" href="#">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link btn btn-primary mapaBoton" href="#">Ver Mapa <span class="sr-only">(current)</span></a>
+            <a class="nav-link btn btn-primary" href="ciudadano">Inicio <span class="sr-only">(current)</span></a>
+          </li><li class="nav-item active">
+            <a class="nav-link btn btn-primary" href="formulario">Realizar denuncia <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active bd-navbar-nav  flex-row">
             <a class="nav-link btn btn-primary" href="#">Contactos <span class="sr-only">(current)</span></a>

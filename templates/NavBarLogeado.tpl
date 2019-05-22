@@ -13,10 +13,9 @@
           <img src="imagenes/logonav.png" class="img-fluid" alt="Logo Municipalidad">
           </li>
           <li class="nav-item active">
-            <a class="nav-link btn btn-primary" href="#">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link btn btn-primary mapaBoton" href="#">Ver Mapa <span class="sr-only">(current)</span></a>
+            <a class="nav-link btn btn-primary" href="ciudadano">Inicio <span class="sr-only">(current)</span></a>
+          </li><li class="nav-item active">
+            <a class="nav-link btn btn-primary" href="formulario">Realizar denuncia <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active bd-navbar-nav  flex-row">
             <a class="nav-link btn btn-primary" href="#">Contactos <span class="sr-only">(current)</span></a>

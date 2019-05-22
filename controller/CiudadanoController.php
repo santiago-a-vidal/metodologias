@@ -24,23 +24,16 @@ class CiudadanoController //extends SecuredController
   }
 
   function Home(){
+    $usuario = $this->model->GetUsuario(1);
+    $denuncias = $this->model->GetDenuncias(1);
     $this->view->MostrarHome($this->Titulo);
+    $this->view->MostrarMapa($usuario[0],$denuncias);
   }
- //Todo lo relacionado a Home
-  function HomeBase($message = ''){
-      $Mapa = $this->model->GetDenuncias();
-      $this->view->ViewBase($message, $this->Titulo, $Mapa);
-  }
+
 
 function VerMapaCiudadano1(){
   $usuario = $this->model->GetUsuario(1);
   $denuncias = $this->model->GetDenuncias(1);
-  $this->view->MostrarMapa($usuario[0],$denuncias);
-}
-
-function VerMapaCiudadano2(){
-  $usuario = $this->model->GetUsuario(2);
-  $denuncias = $this->model->GetDenuncias(2);
   $this->view->MostrarMapa($usuario[0],$denuncias);
 }
 
@@ -54,11 +47,11 @@ function VerMapaCiudadano2(){
 
     $id_usuario = $_POST["id_usuario_form"];
 
- $latitud = $_POST["latitudForm"];
+    $latitud = $_POST["latitudForm"];
 
- $descripcion = $_POST["descripcionForm"];
- $estado = 0;
-//$imagen = $_POST["imagenForm"];
+    $descripcion = $_POST["descripcionForm"];
+    $estado = 0;
+    //$imagen = $_POST["imagenForm"];
 
 $denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$longitud,$latitud); //le saque lo de la imagen porque rompia todo
 
@@ -83,7 +76,7 @@ $denuncia = $this->model ->GuardarDenuncia($descripcion,$estado,$id_usuario,$lon
 
 
 function mostrarFormulario(){ //lleva al usuario al formulario para crear una nueva denuncia
-  $this->view->MostrarHome($this->Titulo);
+  $this->view->MostrarFormulario($this->Titulo);
 }
 
 

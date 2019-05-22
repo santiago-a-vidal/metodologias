@@ -24,14 +24,17 @@ class CiudadanoView
     }
     function MostrarHome($Titulo){
        $this->Smarty->assign('Titulo',"$Titulo");
-        $this->Smarty->display('templates/AgregarDenuncia.tpl');
+      $this->Smarty->display('templates/HomePublico.tpl');
     }
 
-
+    function MostrarFormulario($Titulo){
+      $this->Smarty->assign('Titulo',"$Titulo");
+      $this->Smarty->display('templates/formulario.tpl');
+    }
     function MostrarMapa($usuario,$denuncias){
-      $this->Smarty->assign('usuario',$usuario);
-      $this->Smarty->assign('denuncias',$denuncias);
-      $this->Smarty->display('templates/Mapa.tpl');
+     $this->Smarty->assign('usuario',$usuario);
+    $this->Smarty->assign('denuncias',$denuncias);
+
     }
 
 

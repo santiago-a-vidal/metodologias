@@ -9,6 +9,7 @@
           <label for="ubicacionForm">Ubicación</label>
           <input type="text" class="form-control" id="ubicacionForm" name="ubicacionForm">
         </div>
+
         <div class="form-group">
           <label for="descripcionForm">Descripción</label>
           <input type="text" class="form-control" id="descripcionForm" name="descripcionForm">
@@ -20,5 +21,6 @@
         <button type="submit" class="btn btn-primary">Agregar</button>
       </form>
     </div>
+
 
 {include file="templates/footer.tpl"}
