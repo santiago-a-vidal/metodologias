@@ -20,9 +20,7 @@ class JefeModel
       return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
 
-  function GetDenuncia($id)
-  {
-  }
+
 
   function BorrarDenuncia($id_denuncia){
 

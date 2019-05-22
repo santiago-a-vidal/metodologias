@@ -13,6 +13,12 @@ class JefeView
   {
   }
 
+
+  function MostrarMapa($denuncias){
+    $this->Smarty->assign('denuncias',$denuncias);
+    $this->Smarty->display('templates/MapaJefe.tpl');
+  }
+
 }
 
  ?>
