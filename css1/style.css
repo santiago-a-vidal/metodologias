@@ -14,7 +14,11 @@ background-color: blue;
   margin-top: 100px;
   margin-left: 100px;
 }
-
+h1{
+  text-align: center;
+  color: grey;
+  font-style: italic;
+}
 
 .mapa{
   text-align: center;
@@ -26,5 +30,10 @@ background-color: blue;
 
 .hidden{
   visibility: hidden;
+}
+.formu {
+height: 50%;
+width: 50%;
+
 }
 /*Se ajusta el tamaño de logo municipio de tandil en la barra de navegacion*/
