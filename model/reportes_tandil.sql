@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: May 20, 2019 at 12:06 AM
--- Server version: 10.1.39-MariaDB
--- PHP Version: 7.3.5
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 23-05-2019 a las 03:08:31
+-- Versión del servidor: 10.1.33-MariaDB
+-- Versión de PHP: 7.2.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,28 +19,38 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `reportes_tandil`
+-- Base de datos: `reportes_tandil`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `denuncia`
+-- Estructura de tabla para la tabla `denuncia`
 --
 
 CREATE TABLE `denuncia` (
   `id_denuncia` int(11) NOT NULL,
-  `ubicacion` varchar(150) NOT NULL,
   `descripcion` varchar(200) NOT NULL,
   `estado` tinyint(4) NOT NULL,
   `imagen` varchar(200) NOT NULL,
-  `id_usuario` int(11) NOT NULL
+  `id_usuario` int(11) NOT NULL,
+  `ubicacion` varchar(150) NOT NULL,
+  `latitud` float NOT NULL,
+  `longitud` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `denuncia`
+--
+
+INSERT INTO `denuncia` (`id_denuncia`, `descripcion`, `estado`, `imagen`, `id_usuario`, `ubicacion`, `latitud`, `longitud`) VALUES
+(56, 'djsakdsalk', 0, 'skdjakldjakl', 2, 'jfadsdjsakl 222', 45645.5, 4568.5),
+(57, 'djsakdsalk', 0, 'skdjakldjakl', 2, 'jfadsdjsakl 222', 45645.5, 4568.5);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuario`
+-- Estructura de tabla para la tabla `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -50,7 +60,7 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `usuario`
+-- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`id_usuario`, `mapa`, `esJefe`) VALUES
@@ -59,44 +69,44 @@ INSERT INTO `usuario` (`id_usuario`, `mapa`, `esJefe`) VALUES
 (3, '', 1);
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `denuncia`
+-- Indices de la tabla `denuncia`
 --
 ALTER TABLE `denuncia`
   ADD PRIMARY KEY (`id_denuncia`),
   ADD KEY `id_usuario` (`id_usuario`);
 
 --
--- Indexes for table `usuario`
+-- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_usuario`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `denuncia`
+-- AUTO_INCREMENT de la tabla `denuncia`
 --
 ALTER TABLE `denuncia`
-  MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
--- AUTO_INCREMENT for table `usuario`
+-- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `denuncia`
+-- Filtros para la tabla `denuncia`
 --
 ALTER TABLE `denuncia`
   ADD CONSTRAINT `denuncia_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
