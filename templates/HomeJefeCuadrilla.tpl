@@ -23,6 +23,25 @@
 </div>
 
 
+<div class="listaDenuncias">
+
+
+
+<table>
+  {foreach from=$denuncias item=denuncia}
+  <tr>
+  <td>Descripcion:  {$denuncia['descripcion']}</td>
+
+  <td> latitud {$denuncia['latitud']} </td>
+  <td> longitud{$denuncia['longitud']}</td>
+
+  </tr>
+  {/foreach}
+</table>
+
+</div>
+
+
   <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
   <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
   <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
