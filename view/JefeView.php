@@ -18,7 +18,7 @@ class JefeView
   function MostrarMapaJefe($Titulo, $denuncias){
     $this->Smarty->assign('Titulo',$Titulo);
     $this->Smarty->assign('denuncias',$denuncias);
-    $this->Smarty->display('templates/MapaJefe.tpl');
+    $this->Smarty->display('templates/HomeJefeCuadrilla.tpl');
   }
 
 }

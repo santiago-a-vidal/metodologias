@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-22 23:00:00
+/* Smarty version 3.1.33, created on 2019-05-23 16:22:57
   from 'C:\xampp\htdocs\metodologias\templates\NavBarLogeado.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce5b85061a809_79542251',
+  'unifunc' => 'content_5ce6acc14d3022_72166560',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '24ea5743c5322851d2a6b1b3454c17cdc15494bd' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\NavBarLogeado.tpl',
-      1 => 1558558785,
+      1 => 1558575797,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce5b85061a809_79542251 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce6acc14d3022_72166560 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class="contenedor_Navbar barra">
@@ -41,7 +41,7 @@ function content_5ce5b85061a809_79542251 (Smarty_Internal_Template $_smarty_tpl)
             <a class="nav-link btn btn-primary" href="formulario">Realizar denuncia <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active bd-navbar-nav  flex-row">
-            <a class="nav-link btn btn-primary" >Contactos <span class="sr-only">(current)</span></a>
+            <a class="nav-link btn btn-primary" >Contacto <span class="sr-only">(current)</span></a>
           </li>
         </ul>
         <!-- Dentro de este div se crea una lista donde se encuentra cada boton de la navbar del lado derecho-->

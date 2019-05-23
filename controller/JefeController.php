@@ -17,8 +17,8 @@ class JefeController //extends SecuredController
   $this->view = new JefeView();
 }
 function Home(){
-    $Mapa = $this->model->GetDenunciasActivas(); // llama  la funcion que carga todas las denuncias al mapa del jefe
-    $this->view->MostrarMapaJefe($this->Titulo, $Mapa);
+    $denuncias = $this->model->GetDenunciasActivas(); // llama  la funcion que carga todas las denuncias al mapa del jefe
+    $this->view->MostrarMapaJefe($this->Titulo, $denuncias);
 }
   function CompletarDenuncia($param){ // marcar las denuncias como realizadas ... estados : 0 = activa , 1=inactiva/realizda
       $this->model->CompletarDenuncia($param[0]);
