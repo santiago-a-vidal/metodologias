@@ -1,4 +1,4 @@
-//alert("dsada");
+
 
 function addMarkerToGroup(group, coordinate, html) {
     let marker = new H.map.Marker(coordinate);
@@ -89,9 +89,19 @@ let map = new H.Map(document.getElementById('map'),
 let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 let ui = H.ui.UI.createDefault(map, defaultLayers);
 
-let boton_acitvador = document.getElementById('boton')
-boton_acitvador.addEventListener('click',function () {
-  addInfoBubble(map);
-});
 
-  addInfoBubble(map);
+
+  function setUpClickListener(map) {
+    // Attach an event listener to map display
+    // obtain the coordinates and display in an alert box.
+    map.addEventListener('tap', function (evt) {
+      var coord = map.screenToGeo(evt.currentPointer.viewportX,
+              evt.currentPointer.viewportY);
+      alert('Las coordenadas a cargar son latitud - longitud  ' + Math.abs(coord.lat.toFixed(4)) +
+          ((coord.lat > 0) ? 'N' : 'S') +
+          ' ' + Math.abs(coord.lng.toFixed(4)) +
+           ((coord.lng > 0) ? 'E' : 'W'));
+    });
+  }
+
+setUpClickListener(map);
