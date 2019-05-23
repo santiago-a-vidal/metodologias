@@ -9,7 +9,6 @@ class CiudadanoController //extends SecuredController
   private $view;
   private $model;
   private $Titulo;
-  private $controllerAdmin;
 
   function __construct()
   {
@@ -27,25 +26,23 @@ class CiudadanoController //extends SecuredController
     $this->view->MostrarMapa($this->Titulo,$usuario,$denuncias);
   }
 
-  function insertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
+  function InsertarDenuncia(){ // Esta funcion toma los datos del formulario y se las envia al model
     $longitud = $_POST["longitudForm"];
-  //  echo $_POST["longitudForm"];
-//Se trae el usuario de un input escondido en el form para saber que usuario asignarle a cada denuncia
-    $id_usuario = $_POST["id_usuario_form"];
     $latitud = $_POST["latitudForm"];
     $descripcion = $_POST["descripcionForm"];
-    $imagen = $_POST["imagenForm"];
     $estado = 0;
-    //$imagen = $_POST["imagenForm"];
+    $imagen = $_POST["imagenForm"];
+    $id_usuario = 1;
+    $this->model->GuardarDenuncia($longitud,$latitud,$descripcion,$estado,$imagen,$id_usuario);
+   header(formulario);
+   }
 
 
  //todo esto de insertar la imagen lo saque para poder porbar que esto ande, en un futuro se implementara
 
 
 
- $this->model->GuardarDenuncia($descripcion,$longitud,$latitud,$estado,$imagen,$id_usuario);
-header(formulario);
-}
+
 
 // //como subir la imagen --->   func
 // //tion postImagen($param){
