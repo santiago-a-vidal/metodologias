@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-05-2019 a las 16:21:23
+-- Tiempo de generación: 23-05-2019 a las 19:36:35
 -- Versión del servidor: 10.1.32-MariaDB
 -- Versión de PHP: 7.2.5
 
@@ -30,8 +30,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `denuncia` (
   `id_denuncia` int(11) NOT NULL,
-  `longitud` float NOT NULL,
-  `latitud` float NOT NULL,
+  `longitud` varchar(50) NOT NULL,
+  `latitud` varchar(50) NOT NULL,
   `descripcion` varchar(200) NOT NULL,
   `estado` tinyint(4) NOT NULL,
   `imagen` varchar(200) NOT NULL,
@@ -43,8 +43,11 @@ CREATE TABLE `denuncia` (
 --
 
 INSERT INTO `denuncia` (`id_denuncia`, `longitud`, `latitud`, `descripcion`, `estado`, `imagen`, `id_usuario`) VALUES
-(56, 4568.5, 45645.5, 'djsakdsalk', 0, 'skdjakldjakl', 2),
-(57, 4568.5, 45645.5, 'djsakdsalk', 0, 'skdjakldjakl', 2);
+(56, '4568.5', '45645.5', 'djsakdsalk', 0, 'skdjakldjakl', 2),
+(57, '4568.5', '45645.5', 'djsakdsalk', 0, 'skdjakldjakl', 2),
+(58, '59.1374', '37.3223', 'madera', 0, 'agooos.jpg', 1),
+(59, '59.1298', '37.3209', 'basura', 0, 'basura.jpg', 1),
+(60, '59.1366W', '37.3277S', 'madera', 0, 'madera.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -54,7 +57,6 @@ INSERT INTO `denuncia` (`id_denuncia`, `longitud`, `latitud`, `descripcion`, `es
 
 CREATE TABLE `usuario` (
   `id_usuario` int(11) NOT NULL,
-  `mapa` varchar(300) NOT NULL,
   `esJefe` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -62,10 +64,10 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id_usuario`, `mapa`, `esJefe`) VALUES
-(1, '', 1),
-(2, '', 0),
-(3, '', 1);
+INSERT INTO `usuario` (`id_usuario`, `esJefe`) VALUES
+(1, 1),
+(2, 0),
+(3, 1);
 
 --
 -- Índices para tablas volcadas
@@ -92,7 +94,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `denuncia`
 --
 ALTER TABLE `denuncia`
-  MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
