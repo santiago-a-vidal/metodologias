@@ -4,16 +4,16 @@
     <h1>{$Titulo}</h1>
     <div class="row">
       <div class="col-6">
-    <div class="container formu">
+    <div class="container formu lat">
       <h2>Formulario</h2>
-      <form method="post" action="AgregarDenuncia">
-        <div class="form-group">
-          <label for="longitudForm">Longitud</label>
-          <input type="text" class="form-control" id="longitudForm" name="longitudForm">
-        </div>
+      <form method="post" role="form" action="AgregarDenuncia" enctype="multipart/form-data">
         <div class="form-group">
           <label for="latitudForm">Latitud</label>
-          <input type="text" class="form-control" id="latitudForm" name="latitudForm">
+          <input type="latitud" class="form-control coordenada" id="latitudForm" name="latitudForm" value=" " required>
+        </div>
+        <div class="form-group">
+          <label for="longitudForm">Longitud</label>
+          <input type="longitud" class="form-control coordenada" id="longitudForm" name="longitudForm" value=" " required>
         </div>
         <div class="form-group">
           <label for="descripcionForm">Descripción</label>
@@ -37,4 +37,10 @@
 </div>
 
 
+
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+<script type="text/javascript" src="js/apiUser.js"></script>
 {include file="templates/footer.tpl"}

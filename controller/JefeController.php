@@ -22,6 +22,7 @@ function Home(){
 }
   function CompletarDenuncia($param){ // marcar las denuncias como realizadas ... estados : 0 = activa , 1=inactiva/realizda
       $this->model->CompletarDenuncia($param[0]);
+      $this->model->notificarCuidadano($param[0]);
       header("Location: http://".$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]));
 
     }

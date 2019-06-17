@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-22 22:08:03
+/* Smarty version 3.1.33, created on 2019-06-13 22:40:42
   from 'C:\xampp\htdocs\metodologias\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce5ac236c3369_69313682',
+  'unifunc' => 'content_5d02b4ca5c5899_60910918',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a84906819ab1235832f9eafc5cc05bdabf582611' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\footer.tpl',
-      1 => 1558555426,
+      1 => 1560458262,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce5ac236c3369_69313682 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d02b4ca5c5899_60910918 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer>
 
 </footer>
@@ -48,6 +48,7 @@ function content_5ce5ac236c3369_69313682 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
  src="js/bootstrap.min.js"><?php echo '</script'; ?>
 >
+
     <?php echo '<script'; ?>
  type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"><?php echo '</script'; ?>
 >
@@ -59,9 +60,6 @@ function content_5ce5ac236c3369_69313682 (Smarty_Internal_Template $_smarty_tpl)
 >
     <?php echo '<script'; ?>
  type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- type="text/javascript" src="js/api.js"><?php echo '</script'; ?>
 >
   </body>
 </html>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-23 01:58:20
+/* Smarty version 3.1.33, created on 2019-06-13 23:27:37
   from 'C:\xampp\htdocs\metodologias\templates\formulario.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce5e21c0488a9_27633053',
+  'unifunc' => 'content_5d02bfc92f0cd6_97422121',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a1aa72405e9f81af703f12129b247fc2e9b2d1fb' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\formulario.tpl',
-      1 => 1558569496,
+      1 => 1560461253,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ce5e21c0488a9_27633053 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d02bfc92f0cd6_97422121 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:templates/NavBarLogeado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -32,16 +32,16 @@ $_smarty_tpl->_subTemplateRender("file:templates/NavBarLogeado.tpl", $_smarty_tp
 </h1>
     <div class="row">
       <div class="col-6">
-    <div class="container formu">
+    <div class="container formu lat">
       <h2>Formulario</h2>
-      <form method="post" action="AgregarDenuncia">
-        <div class="form-group">
-          <label for="longitudForm">Longitud</label>
-          <input type="text" class="form-control" id="longitudForm" name="longitudForm">
-        </div>
+      <form method="post" role="form" action="AgregarDenuncia" enctype="multipart/form-data">
         <div class="form-group">
           <label for="latitudForm">Latitud</label>
-          <input type="text" class="form-control" id="latitudForm" name="latitudForm">
+          <input type="latitud" class="form-control coordenada" id="latitudForm" name="latitudForm" value=" " required>
+        </div>
+        <div class="form-group">
+          <label for="longitudForm">Longitud</label>
+          <input type="longitud" class="form-control coordenada" id="longitudForm" name="longitudForm" value=" " required>
         </div>
         <div class="form-group">
           <label for="descripcionForm">Descripción</label>
@@ -66,6 +66,22 @@ $_smarty_tpl->_subTemplateRender("file:templates/NavBarLogeado.tpl", $_smarty_tp
 </div>
 
 
+
+<?php echo '<script'; ?>
+ type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="js/apiUser.js"><?php echo '</script'; ?>
+>
 <?php $_smarty_tpl->_subTemplateRender("file:templates/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 }

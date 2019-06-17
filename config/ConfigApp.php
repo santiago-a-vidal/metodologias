@@ -17,9 +17,8 @@ class ConfigApp
       'jefe'=> 'JefeController#Home',
       'ciudadano'=> 'CiudadanoController#Home',
       'formulario'=>'CiudadanoController#mostrarFormulario',
-      //Esto es para ver el mapa del jefe, pero no pude probar si anda
-      'mapajefe'=> 'JefeController#VerMapaJefe',
-      'AgregarDenuncia'=> 'CiudadanoController#InsertarDenuncia'
+      'AgregarDenuncia'=> 'CiudadanoController#InsertarDenuncia',
+      'denunciaRealizada'=>'JefeController#CompletarDenuncia',
     ];
 
     }

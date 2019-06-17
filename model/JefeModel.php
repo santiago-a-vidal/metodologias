@@ -14,7 +14,6 @@ class JefeModel
     , 'root', '');
   }
 
-
   function GetDenunciasActivas(){
     $sentencia = $this->db->prepare( "select * from denuncia where estado=0 ");
     $sentencia->execute();
@@ -24,6 +23,10 @@ class JefeModel
   function CompletarDenuncia($id_denuncia){
    $sentencia = $this->db->prepare( "update denuncia set estado=1 where id=?");
    $sentencia->execute(array($id_denuncia));
+ }
+ function notificarCuidadano($id_denuncia){
+   $sentencia= $this->db->prepare("select email from usuario where id_usuario= ?");
+   $sentencia=execute(array(1));
  }
 
 }

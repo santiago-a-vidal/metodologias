@@ -31,7 +31,7 @@ class CiudadanoController //extends SecuredController
     $latitud = $_POST["latitudForm"];
     $descripcion = $_POST["descripcionForm"];
     $estado = 0;
-    $imagen = $_POST["imagenForm"];
+    $imagen = $_FILES["imagenForm"]['tmp_name'];
     $id_usuario = 1;
     $this->model->GuardarDenuncia($longitud,$latitud,$descripcion,$estado,$imagen,$id_usuario);
    header(formulario);
@@ -52,7 +52,6 @@ class CiudadanoController //extends SecuredController
 //      //$type = $_FILES['imagen']['type'];
 //      //$arrayType= explode("/",$type);
 //    //  $destino ='images/'.$name.".".$arrayType[1];
-//
 //    //  move_uploaded_file($ruta,$destino);
 //    //  $this->model->postImagen($name,$destino,$param[0]);
 //
