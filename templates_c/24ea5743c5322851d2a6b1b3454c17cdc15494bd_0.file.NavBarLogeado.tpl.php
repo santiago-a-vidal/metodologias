@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-23 16:22:57
+/* Smarty version 3.1.33, created on 2019-06-18 21:15:15
   from 'C:\xampp\htdocs\metodologias\templates\NavBarLogeado.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce6acc14d3022_72166560',
+  'unifunc' => 'content_5d0938433596c3_27232261',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '24ea5743c5322851d2a6b1b3454c17cdc15494bd' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\NavBarLogeado.tpl',
-      1 => 1558575797,
+      1 => 1558631196,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce6acc14d3022_72166560 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0938433596c3_27232261 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class="contenedor_Navbar barra">

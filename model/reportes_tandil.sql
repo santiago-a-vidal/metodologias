@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-05-2019 a las 19:36:35
+-- Tiempo de generación: 18-06-2019 a las 19:49:56
 -- Versión del servidor: 10.1.32-MariaDB
 -- Versión de PHP: 7.2.5
 
@@ -43,11 +43,11 @@ CREATE TABLE `denuncia` (
 --
 
 INSERT INTO `denuncia` (`id_denuncia`, `longitud`, `latitud`, `descripcion`, `estado`, `imagen`, `id_usuario`) VALUES
-(56, '4568.5', '45645.5', 'djsakdsalk', 0, 'skdjakldjakl', 2),
-(57, '4568.5', '45645.5', 'djsakdsalk', 0, 'skdjakldjakl', 2),
-(58, '59.1374', '37.3223', 'madera', 0, 'agooos.jpg', 1),
-(59, '59.1298', '37.3209', 'basura', 0, 'basura.jpg', 1),
-(60, '59.1366W', '37.3277S', 'madera', 0, 'madera.jpg', 1);
+(65, '-59.1406', '-37.3082', 'Gomas de auto', 0, 'images/5d02cacd8ca7d.jpg', 1),
+(66, '-59.1231', '-37.337', 'Maderas tiradas', 0, 'images/5d02cb2122848.jpg', 1),
+(67, '-59.1282', '-37.3204', 'Basura acumulada hace varios dias', 0, 'images/5d02cb843884b.jpg', 1),
+(69, '-59.1126', '-37.3106', 'Muebles tirados', 1, 'images/5d02ced9e7c27.jpg', 1),
+(70, '-59.1174', '-37.295', 'Sillon en via publica', 0, 'images/5d02cefcc5698.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -57,17 +57,19 @@ INSERT INTO `denuncia` (`id_denuncia`, `longitud`, `latitud`, `descripcion`, `es
 
 CREATE TABLE `usuario` (
   `id_usuario` int(11) NOT NULL,
-  `esJefe` tinyint(4) NOT NULL
+  `esJefe` tinyint(4) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `nombre` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id_usuario`, `esJefe`) VALUES
-(1, 1),
-(2, 0),
-(3, 1);
+INSERT INTO `usuario` (`id_usuario`, `esJefe`, `email`, `nombre`) VALUES
+(1, 1, 'brendulu@gmail.com', 'Brenda Flamminio'),
+(2, 0, '', ''),
+(3, 1, '', '');
 
 --
 -- Índices para tablas volcadas
@@ -94,7 +96,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `denuncia`
 --
 ALTER TABLE `denuncia`
-  MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id_denuncia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`

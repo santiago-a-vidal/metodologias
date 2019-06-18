@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-22 03:54:43
+/* Smarty version 3.1.33, created on 2019-06-18 21:15:15
   from 'C:\xampp\htdocs\metodologias\templates\NavBar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce4abe37fee01_98514182',
+  'unifunc' => 'content_5d0938435ca6c5_72020902',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0e94a661cc6dbb6dafd168e97e7fab513ff1b59e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\NavBar.tpl',
-      1 => 1558490081,
+      1 => 1558570205,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce4abe37fee01_98514182 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0938435ca6c5_72020902 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="contenedor_Navbar barra">
 
     <nav class="navbar navbar-expand-xl navbar-dark bg-primary  ">
