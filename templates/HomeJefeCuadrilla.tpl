@@ -11,7 +11,9 @@
 <table>
   {foreach from=$denuncias item=denuncia}
   <tr>
+  <input type="hidden" id="idForm" value="{$denuncia['id_denuncia']}">
   <td class="latitud">{$denuncia['latitud']} </td>
+  <input type="hidden" id="estadoForm" value="{$denuncia['estado']}">
   <td class="longitud">{$denuncia['longitud']}</td>
   <td  class="imagen"> {$denuncia['imagen']}</td>
   <td class="descripcion">{$denuncia['descripcion']}</td>

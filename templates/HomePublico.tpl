@@ -8,8 +8,10 @@
       <table>
         {foreach from=$denuncias item=denuncia}
         <tr>
+            <input type="hidden" id="idForm" value="-1">
           <td class="latitud">{$denuncia['latitud']} </td>
           <td class="longitud">{$denuncia['longitud']}</td>
+          <input type="hidden" id="estadoForm" value="{$denuncia['estado']}">
           <td class="imagen">{$denuncia['imagen']}</td>
           <td class="descripcion">{$denuncia['descripcion']}</td>
         </tr>

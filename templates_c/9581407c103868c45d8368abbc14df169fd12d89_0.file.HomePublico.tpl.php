@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-14 00:27:51
+/* Smarty version 3.1.33, created on 2019-06-18 23:54:19
   from 'C:\xampp\htdocs\metodologias\templates\HomePublico.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d02cde7461994_62059779',
+  'unifunc' => 'content_5d095d8b3d66c4_43856205',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9581407c103868c45d8368abbc14df169fd12d89' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\HomePublico.tpl',
-      1 => 1560464867,
+      1 => 1560894840,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5d02cde7461994_62059779 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d095d8b3d66c4_43856205 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:templates/NavBarLogeado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -39,10 +39,13 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['denuncia']->value) {
 ?>
         <tr>
+            <input type="hidden" id="idForm" value="-1">
           <td class="latitud"><?php echo $_smarty_tpl->tpl_vars['denuncia']->value['latitud'];?>
  </td>
           <td class="longitud"><?php echo $_smarty_tpl->tpl_vars['denuncia']->value['longitud'];?>
 </td>
+          <input type="hidden" id="estadoForm" value="<?php echo $_smarty_tpl->tpl_vars['denuncia']->value['estado'];?>
+">
           <td class="imagen"><?php echo $_smarty_tpl->tpl_vars['denuncia']->value['imagen'];?>
 </td>
           <td class="descripcion"><?php echo $_smarty_tpl->tpl_vars['denuncia']->value['descripcion'];?>

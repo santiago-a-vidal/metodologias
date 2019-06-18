@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-13 22:40:42
+/* Smarty version 3.1.33, created on 2019-06-18 23:09:11
   from 'C:\xampp\htdocs\metodologias\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d02b4ca5c5899_60910918',
+  'unifunc' => 'content_5d0952f75747c2_46145047',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a84906819ab1235832f9eafc5cc05bdabf582611' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\footer.tpl',
-      1 => 1560458262,
+      1 => 1560892150,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d02b4ca5c5899_60910918 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0952f75747c2_46145047 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer>
 
 </footer>
@@ -36,9 +36,7 @@ function content_5d02b4ca5c5899_60910918 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
  src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"><?php echo '</script'; ?>
 >
-    <?php echo '<script'; ?>
- src="js/main.js"><?php echo '</script'; ?>
->
+
     <?php echo '<script'; ?>
  src="js/jquery-3.3.1.min.js"><?php echo '</script'; ?>
 >

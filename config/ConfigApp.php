@@ -4,6 +4,7 @@
 //define('HOME', 'Location: http://'.$_SERVER["SERVER_NAME"]. ":". $_SERVER['SERVER_PORT'] . dirname($_SERVER["PHP_SELF"]));
 //dirname($_SERVER["PHP_SELF"]);
 define('HOME', 'Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]). '/home');
+define('JEFE', 'Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]). '/jefe');
 define('formulario', 'Location: http://'.$_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]). '/formulario');
 
 
@@ -18,7 +19,7 @@ class ConfigApp
       'ciudadano'=> 'CiudadanoController#Home',
       'formulario'=>'CiudadanoController#mostrarFormulario',
       'AgregarDenuncia'=> 'CiudadanoController#InsertarDenuncia',
-      'denunciaRealizada'=>'JefeController#CompletarDenuncia',
+      'completarDenuncia'=>'JefeController#CompletarDenuncia',
     ];
 
     }

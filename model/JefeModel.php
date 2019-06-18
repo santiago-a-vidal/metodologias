@@ -21,7 +21,7 @@ class JefeModel
   }
 
   function CompletarDenuncia($id_denuncia){
-   $sentencia = $this->db->prepare( "update denuncia set estado=1 where id=?");
+   $sentencia = $this->db->prepare( "update denuncia set estado=1 where id_denuncia=?");
    $sentencia->execute(array($id_denuncia));
  }
  function notificarCuidadano($id_denuncia){
