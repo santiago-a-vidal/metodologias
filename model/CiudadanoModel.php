@@ -22,9 +22,15 @@ class CiudadanoModel
     return $sentencia->fetchAll(PDO::FETCH_ASSOC);
   }
 
+  function GetDenuncia($id_denuncia){
+    $sentencia = $this->db->prepare( "select * from denuncia where id_denuncia=? limit 1");
+    $sentencia->execute(array($id_denuncia));
+    return $sentencia->fetch(PDO::FETCH_ASSOC);
+  }
+
 
   function GetUsuario($id_usuario){
-    $sentencia = $this->db->prepare( "select id_usuario from usuario where id_usuario=? limit 1");
+    $sentencia = $this->db->prepare( "select * from usuario where id_usuario=? limit 1");
     $sentencia->execute(array($id_usuario));
     return $sentencia->fetch(PDO::FETCH_ASSOC);
   }
