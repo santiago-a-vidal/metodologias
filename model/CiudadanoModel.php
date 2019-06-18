@@ -31,12 +31,13 @@ class CiudadanoModel
 
 
   function GuardarDenuncia($longitud,$latitud,$descripcion,$estado,$imagen,$id_usuario)  {
-    $imagen=$this->prepararImagen($imagen1);
+    $imagen=$this->prepararImagen($imagen);
     $sentencia = $this->db->prepare("INSERT INTO denuncia(longitud,latitud,descripcion,estado,imagen,id_usuario) VALUES(?,?,?,?,?,?)");
     $sentencia->execute(array($longitud,$latitud,$descripcion,$estado,$imagen,$id_usuario));
   }
+
   function prepararImagen($imagen){ // la funcion le asigna una ruta relativa a la nueva imagen
-    $ruta = 'images/' . uniqid() . '.jpg';
+    $ruta = 'imagenes/' . uniqid() .'.jpg';
     move_uploaded_file($imagen, $ruta);
     return $ruta;
   }
