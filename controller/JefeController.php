@@ -47,15 +47,15 @@ function Home(){
                 $fechaHoy ="19 de Junio de 2019";
                 $ubicacion = $denuncia['latitud'].', '.$denuncia['longitud'];
                 //asunto
-                $subject = 'Notificacion de la Denuncia  N°'.$numeroDenuncia;
+                $subject = 'Notificación de la Denuncia  N°'.$numeroDenuncia;
 
 
 
                 //Le damos una estructura al mail
                 $htmlContent = "<div>
-                <h3>Señor cuiudadano por medio de este correo electronico se le notifica
-    			que el dia $fechaHoy se ha realizado la recoleccion de los residuos que este usted
-    			$nombrecompleto ha reportado en la ubicacion : $ubicacion  con la siguente descripcion: $descripcion donde el numero de denuncia asignado fue $numeroDenuncia </h3>
+                <h3>Estimado cuiudadano por medio de este correo electrónico se le notifica
+    			que el día $fechaHoy se ha realizado la recolección de los residuos que usted
+    			$nombrecompleto ha reportado en la ubicación : $ubicacion  con la siguente descripción: $descripcion donde el número de denuncia asignado fue $numeroDenuncia </h3>
 
 
                 </div>";

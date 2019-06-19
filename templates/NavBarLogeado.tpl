@@ -17,9 +17,9 @@
           </li><li class="nav-item active">
             <a class="nav-link btn btn-primary" href="formulario">Realizar denuncia <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active bd-navbar-nav  flex-row">
+          <!--<li class="nav-item active bd-navbar-nav  flex-row">
             <a class="nav-link btn btn-primary" href="contacto">Contactanos <span class="sr-only">(current)</span></a>
-          </li>
+          </li>-->
         </ul>
         <!-- Dentro de este div se crea una lista donde se encuentra cada boton de la navbar del lado derecho-->
 <!--          <div class=" nav-item active  bd-navbar-nav flex-row">-->
