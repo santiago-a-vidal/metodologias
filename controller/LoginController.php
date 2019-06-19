@@ -17,6 +17,9 @@ class LoginController
   function Home(){
     $this->view->mostrarHomeBase();
   }
+  function contacto (){
+    $this->view->mostrarContacto();
+  }
 
   function logout(){
     session_start();

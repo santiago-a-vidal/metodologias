@@ -14,10 +14,6 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link btn btn-primary" href="jefe">Inicio <span class="sr-only">(current)</span></a>
-
-          <li class="nav-item active bd-navbar-nav  flex-row">
-            <a class="nav-link btn btn-primary" >Contactos <span class="sr-only">(current)</span></a>
-          </li>
         </ul>
         <!-- Dentro de este div se crea una lista donde se encuentra cada boton de la navbar del lado derecho-->
 <!--          <div class=" nav-item active  bd-navbar-nav flex-row">-->

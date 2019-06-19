@@ -20,6 +20,7 @@ class ConfigApp
       'formulario'=>'CiudadanoController#mostrarFormulario',
       'AgregarDenuncia'=> 'CiudadanoController#InsertarDenuncia',
       'completarDenuncia'=>'JefeController#CompletarDenuncia',
+      'contacto'=> 'LoginController#contacto',
     ];
 
     }

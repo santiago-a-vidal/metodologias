@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-18 21:33:08
+/* Smarty version 3.1.33, created on 2019-06-19 17:44:26
   from 'C:\xampp\htdocs\metodologias\templates\NavBarLogeadoJefe.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d093c74902a49_54383180',
+  'unifunc' => 'content_5d0a585acf1384_20350797',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2188b502e56ea3977b46e37cf4e6b4035fdbe913' => 
     array (
       0 => 'C:\\xampp\\htdocs\\metodologias\\templates\\NavBarLogeadoJefe.tpl',
-      1 => 1558570205,
+      1 => 1560959063,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d093c74902a49_54383180 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0a585acf1384_20350797 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class="contenedor_Navbar barra">
@@ -37,10 +37,6 @@ function content_5d093c74902a49_54383180 (Smarty_Internal_Template $_smarty_tpl)
           </li>
           <li class="nav-item active">
             <a class="nav-link btn btn-primary" href="jefe">Inicio <span class="sr-only">(current)</span></a>
-
-          <li class="nav-item active bd-navbar-nav  flex-row">
-            <a class="nav-link btn btn-primary" >Contactos <span class="sr-only">(current)</span></a>
-          </li>
         </ul>
         <!-- Dentro de este div se crea una lista donde se encuentra cada boton de la navbar del lado derecho-->
 <!--          <div class=" nav-item active  bd-navbar-nav flex-row">-->

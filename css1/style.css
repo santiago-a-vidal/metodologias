@@ -44,9 +44,13 @@ border-radius: 5%;
 
 .descripcion{
 text-align: center;
-font-size: 12px;
+font-size: 14px;
 width: 100%;
 padding: 10%;
-background-color: rgba(255, 255, 255, 0.5);
+background-color: rgb(236, 236, 231);
+}
+.p{
+  color:#0080FF;
+
 }
 /*Se ajusta el tamaño de logo municipio de tandil en la barra de navegacion*/

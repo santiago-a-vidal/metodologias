@@ -55,14 +55,14 @@ function addInfoBubble(map) {
        let id_denuncia= document.querySelectorAll("#idForm");
        let completar;
        let completada;
-       //iteramos las denuncias y las insertamos en el mapa
+       //iteramos las denuncias y las insertamos en el mapa , dependiendo el estado de la denuncia y el id
        for(let i = 0; i < latitud.length; i++){
 
         if (id_denuncia[i].value<0){
           completar = " ";
        }
       else{
-        completar = '<div><a href="completarDenuncia/'+id_denuncia[i].value+'">COMPLETAR</a></div>';
+        completar = '<div class="p"><a href="completarDenuncia/'+id_denuncia[i].value+'">COMPLETAR</a></div>';
 
       }
       if (estado[i].value==1){
@@ -76,9 +76,7 @@ function addInfoBubble(map) {
 
       addMarkerToGroup(group, {lat: latitud[i].innerHTML, lng: longitud[i].innerHTML},
                    '<div class="descripcion"><div><a> <img class="imgDenuncia" src="'+imagen[i].innerHTML+'"></a>' +
-                       '</div><div> '+descripcion[i].innerHTML+'</div>'+completar+completada+'</div>');
-
-
+                       '</div><div class="p"> '+descripcion[i].innerHTML+'</div>'+completar+completada+'</div>');
 
        }
 }

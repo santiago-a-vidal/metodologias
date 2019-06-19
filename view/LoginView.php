@@ -17,7 +17,9 @@ class LoginView
     $this->Smarty->assign('Message',$message);
     $this->Smarty->display('templates/HomeBase.tpl');
   }
-
+function mostrarContacto(){
+  $this->Smarty->display('templates/contacto.tpl');
+}
 }
 
  ?>

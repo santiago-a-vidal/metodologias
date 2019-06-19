@@ -16,9 +16,9 @@
           <li class="nav-item active">
             <a class="nav-link btn btn-primary" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
-        
+
           <li class="nav-item active bd-navbar-nav  flex-row">
-            <a class="nav-link btn btn-primary" href="#">Contactos <span class="sr-only">(current)</span></a>
+            <a class="nav-link btn btn-primary" href="contacto">Contactanos <span class="sr-only">(current)</span></a>
           </li>
         </ul>
         <!-- Dentro de este div se crea una lista donde se encuentra cada boton de la navbar del lado derecho-->

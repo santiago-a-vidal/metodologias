@@ -37,10 +37,10 @@ function Home(){
 
     private function notificarCiudadano($denuncia,$usuario){
                 //mail que simula ser el de la secretaria
-                $to = 'brendulu@gmail.com';
+                $to = $usuario['email'];
                 //envia el mail
-                $from = 'venere.maia@gmail.com';
-                $fromName = 'Secretaria de medio ambiente Tandil';
+                $from = 'brendulu@gmail.com';
+                $fromName = 'Secretaria de medio ambiente Municipalidad de Tandil';
                 $numeroDenuncia = $denuncia['id_denuncia'];
     			$descripcion= $denuncia['descripcion'];
                 $nombrecompleto = $usuario['nombre'];
@@ -66,7 +66,6 @@ function Home(){
                 $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
                 $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
                 "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n";
-                //adjunta el video
 
                 $message .= "--{$mime_boundary}--";
                 $returnpath = "-f" . $from;
